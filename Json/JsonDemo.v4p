@@ -1,0 +1,2287 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha36.1.dtd" >
+   <PATCH nodename="C:\lib-vvvv\Library\VL\Json\JsonDemo.v4p" systemname="JsonManipulator" filename="C:\Work\anton-workinprogress\JsonManipulator\JsonManipulator.v4p" scrollx="32265" scrolly="0">
+   <BOUNDS type="Window" left="4935" top="465" width="26910" height="18240">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <PACK Name="addonpack" Version="36.0.0">
+   </PACK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="399">
+   <BOUNDS type="Node" left="3630" top="1080" width="540" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3630" top="1080" width="2730" height="735">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Read JSON:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="23">
+   </PIN>
+   </NODE>
+   <NODE systemname="ToJson (Json)" filename="C:\Work\anton-workinprogress\JsonManipulator\vl\VVVV.Value.JsonManipulator.vl" nodename="JsonManipulator (Value)" componentmode="Hidden" id="401">
+   <BOUNDS type="Node" left="4065" top="4755" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="|{&cr;&lf;  &quot;action&quot; : {&cr;&lf;    &quot;type&quot; : &quot;NEXT_PAGE&quot;&cr;&lf;  },&cr;&lf;  &quot;state&quot; : {&cr;&lf;    &quot;knobs&quot; : {&cr;&lf;      &quot;1&quot; : {&cr;&lf;        &quot;knob1&quot; : 1,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;2&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;3&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;4&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      }&cr;&lf;    },&cr;&lf;    &quot;navigation&quot; : {&cr;&lf;      &quot;currentPage&quot; : 1&cr;&lf;    }&cr;&lf;  }&cr;&lf;}|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Read" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Cloned Data" visible="1">
+   </PIN>
+   <PIN pinname="Original Data" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="400">
+   <BOUNDS type="Box" left="4830" top="3840" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4830" top="3840" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Read">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="400" srcpinname="Y Output Value" dstnodeid="401" dstpinname="Read">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="402">
+   <BOUNDS type="Box" left="1665" top="2160" width="1905" height="1770">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1665" top="2160" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|{&cr;&lf;  &quot;action&quot; : {&cr;&lf;    &quot;type&quot; : &quot;NEXT_PAGE&quot;&cr;&lf;  },&cr;&lf;  &quot;state&quot; : {&cr;&lf;    &quot;knobs&quot; : {&cr;&lf;      &quot;1&quot; : {&cr;&lf;        &quot;knob1&quot; : 1,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;2&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;3&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;4&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      }&cr;&lf;    },&cr;&lf;    &quot;navigation&quot; : {&cr;&lf;      &quot;currentPage&quot; : 1&cr;&lf;    }&cr;&lf;  }&cr;&lf;}|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="{&quot;vvvv&quot;:&quot;awesome&quot;}">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="402" srcpinname="Output String" dstnodeid="401" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="404">
+   <BOUNDS type="Box" left="4080" top="6615" width="3015" height="6075">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4080" top="6615" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="1" values="|{&cr;&lf;  &quot;action&quot;: {&cr;&lf;    &quot;type&quot;: &quot;NEXT_PAGE&quot;&cr;&lf;  },&cr;&lf;  &quot;state&quot;: {&cr;&lf;    &quot;knobs&quot;: {&cr;&lf;      &quot;1&quot;: {&cr;&lf;        &quot;knob1&quot;: 1,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      },&cr;&lf;      &quot;2&quot;: {&cr;&lf;        &quot;knob1&quot;: 0,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      },&cr;&lf;      &quot;3&quot;: {&cr;&lf;        &quot;knob1&quot;: 0,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      },&cr;&lf;      &quot;4&quot;: {&cr;&lf;        &quot;knob1&quot;: 0,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      }&cr;&lf;    },&cr;&lf;    &quot;navigation&quot;: {&cr;&lf;      &quot;currentPage&quot;: 1&cr;&lf;    }&cr;&lf;  }&cr;&lf;}|">
+   </PIN>
+   </NODE>
+   <NODE systemname="AsString (Json)" filename="C:\lib-vvvv\Library\vl\Json\JsonManipulator\vl\VVVV.Value.JsonManipulator.vl" nodename="ToString (Json)" componentmode="Hidden" id="403">
+   <BOUNDS type="Node" left="4065" top="5655" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="403" srcpinname="Output" dstnodeid="404" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="401" srcpinname="Output" dstnodeid="403" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="405">
+   <BOUNDS type="Box" left="5640" top="5640" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5640" top="5640" width="0" height="0">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="401" srcpinname="Output" dstnodeid="405" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="406">
+   <BOUNDS type="Node" left="6600" top="5625" width="1095" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6600" top="5625" width="1110" height="285">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; JSON Object|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="ToJson (Json)" filename="C:\Work\anton-workinprogress\JsonManipulator\vl\VVVV.Value.JsonManipulator.vl" nodename="JsonManipulator (Value)" componentmode="Hidden" id="410">
+   <BOUNDS type="Node" left="12075" top="5520" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="|{&cr;&lf;  &quot;action&quot; : {&cr;&lf;    &quot;type&quot; : &quot;NEXT_PAGE&quot;&cr;&lf;  },&cr;&lf;  &quot;state&quot; : {&cr;&lf;    &quot;knobs&quot; : {&cr;&lf;      &quot;1&quot; : {&cr;&lf;        &quot;knob1&quot; : 1,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;2&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;3&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;4&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      }&cr;&lf;    },&cr;&lf;    &quot;navigation&quot; : {&cr;&lf;      &quot;currentPage&quot; : 1&cr;&lf;    }&cr;&lf;  }&cr;&lf;}|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Read" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Cloned Data" visible="1">
+   </PIN>
+   <PIN pinname="Original Data" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="409">
+   <BOUNDS type="Box" left="12840" top="4605" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12840" top="4605" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Read">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="409" srcpinname="Y Output Value" dstnodeid="410" dstpinname="Read">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="408">
+   <BOUNDS type="Box" left="9675" top="2925" width="1605" height="1935">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9675" top="2925" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|{&cr;&lf;  &quot;action&quot; : {&cr;&lf;    &quot;type&quot; : &quot;NEXT_PAGE&quot;&cr;&lf;  },&cr;&lf;  &quot;state&quot; : {&cr;&lf;    &quot;knobs&quot; : {&cr;&lf;      &quot;1&quot; : {&cr;&lf;        &quot;knob1&quot; : 1,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;2&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;3&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;4&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      }&cr;&lf;    },&cr;&lf;    &quot;navigation&quot; : {&cr;&lf;      &quot;currentPage&quot; : 1&cr;&lf;    }&cr;&lf;  }&cr;&lf;}|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="{&quot;vvvv&quot;:&quot;awesome&quot;}">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="408" srcpinname="Output String" dstnodeid="410" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="411">
+   <BOUNDS type="Node" left="9690" top="1080" width="540" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9690" top="1080" width="2670" height="630">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Get Items:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="23">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetItem (Json Path)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="GetItem (Json Path)" componentmode="Hidden" id="413">
+   <BOUNDS type="Node" left="12090" top="6765" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Path" visible="1" slicecount="1" values="state.knobs">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="412">
+   <BOUNDS type="Box" left="12870" top="6015" width="1440" height="510">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12870" top="6015" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="state.knobs">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="412" srcpinname="Output String" dstnodeid="413" dstpinname="Path">
+   </LINK>
+   <LINK srcnodeid="410" srcpinname="Output" dstnodeid="413" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="415">
+   <BOUNDS type="Box" left="11025" top="8640" width="1380" height="3960">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11025" top="8640" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="1" values="|{&cr;&lf;  &quot;action&quot;: {&cr;&lf;    &quot;type&quot;: &quot;NEXT_PAGE&quot;&cr;&lf;  },&cr;&lf;  &quot;state&quot;: {&cr;&lf;    &quot;knobs&quot;: {&cr;&lf;      &quot;1&quot;: {&cr;&lf;        &quot;knob1&quot;: 1,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      },&cr;&lf;      &quot;2&quot;: {&cr;&lf;        &quot;knob1&quot;: 0,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      },&cr;&lf;      &quot;3&quot;: {&cr;&lf;        &quot;knob1&quot;: 0,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      },&cr;&lf;      &quot;4&quot;: {&cr;&lf;        &quot;knob1&quot;: 0,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      }&cr;&lf;    },&cr;&lf;    &quot;navigation&quot;: {&cr;&lf;      &quot;currentPage&quot;: 1&cr;&lf;    }&cr;&lf;  }&cr;&lf;}|">
+   </PIN>
+   </NODE>
+   <NODE systemname="AsString (Json)" filename="C:\lib-vvvv\Library\vl\Json\JsonManipulator\vl\VVVV.Value.JsonManipulator.vl" nodename="ToString (Json)" componentmode="Hidden" id="414">
+   <BOUNDS type="Node" left="11010" top="7680" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="414" srcpinname="Output" dstnodeid="415" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="413" srcpinname="Output" dstnodeid="414" dstpinname="Input">
+   </LINK>
+   <NODE systemname="GetItem (Json Path)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="GetItem (Json Path)" componentmode="Hidden" id="417">
+   <BOUNDS type="Node" left="13155" top="8520" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Path" visible="1" slicecount="1" values="1.knob1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="416">
+   <BOUNDS type="Box" left="13920" top="8085" width="720" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13920" top="8085" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="1.knob1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="416" srcpinname="Output String" dstnodeid="417" dstpinname="Path">
+   </LINK>
+   <LINK srcnodeid="413" srcpinname="Output" dstnodeid="417" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="419">
+   <BOUNDS type="Box" left="13140" top="9675" width="1500" height="360">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13140" top="9675" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="1" values="|{&cr;&lf;  &quot;action&quot;: {&cr;&lf;    &quot;type&quot;: &quot;NEXT_PAGE&quot;&cr;&lf;  },&cr;&lf;  &quot;state&quot;: {&cr;&lf;    &quot;knobs&quot;: {&cr;&lf;      &quot;1&quot;: {&cr;&lf;        &quot;knob1&quot;: 1,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      },&cr;&lf;      &quot;2&quot;: {&cr;&lf;        &quot;knob1&quot;: 0,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      },&cr;&lf;      &quot;3&quot;: {&cr;&lf;        &quot;knob1&quot;: 0,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      },&cr;&lf;      &quot;4&quot;: {&cr;&lf;        &quot;knob1&quot;: 0,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      }&cr;&lf;    },&cr;&lf;    &quot;navigation&quot;: {&cr;&lf;      &quot;currentPage&quot;: 1&cr;&lf;    }&cr;&lf;  }&cr;&lf;}|">
+   </PIN>
+   </NODE>
+   <NODE systemname="AsString (Json)" filename="C:\lib-vvvv\Library\vl\Json\JsonManipulator\vl\VVVV.Value.JsonManipulator.vl" nodename="ToString (Json)" componentmode="Hidden" id="418">
+   <BOUNDS type="Node" left="13140" top="9150" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="418" srcpinname="Output" dstnodeid="419" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="417" srcpinname="Output" dstnodeid="418" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="420">
+   <BOUNDS type="Node" left="18315" top="1005" width="540" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="18315" top="1005" width="2730" height="660">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Split Items:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="23">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="421">
+   <BOUNDS type="Node" left="17850" top="7485" width="540" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="17850" top="7485" width="1035" height="465">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="Pair:">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
+   </PIN>
+   </NODE>
+   <NODE systemname="Pair (Json Split)" filename="C:\lib-vvvv\Library\vl\Json\JsonManipulator\vl\VVVV.Value.JsonManipulator.vl" nodename="Pair (Json Split)" componentmode="Hidden" id="422">
+   <BOUNDS type="Node" left="20340" top="7500" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Value" visible="1">
+   </PIN>
+   <PIN pinname="Name" visible="1">
+   </PIN>
+   <PIN pinname="Content" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="ToJson (Json)" filename="C:\Work\anton-workinprogress\JsonManipulator\vl\VVVV.Value.JsonManipulator.vl" nodename="JsonManipulator (Value)" componentmode="Hidden" id="425">
+   <BOUNDS type="Node" left="20340" top="4815" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="|{&cr;&lf;  &quot;action&quot; : {&cr;&lf;    &quot;type&quot; : &quot;NEXT_PAGE&quot;&cr;&lf;  },&cr;&lf;  &quot;state&quot; : {&cr;&lf;    &quot;knobs&quot; : {&cr;&lf;      &quot;1&quot; : {&cr;&lf;        &quot;knob1&quot; : 1,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;2&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;3&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;4&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      }&cr;&lf;    },&cr;&lf;    &quot;navigation&quot; : {&cr;&lf;      &quot;currentPage&quot; : 1&cr;&lf;    }&cr;&lf;  }&cr;&lf;}|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Read" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Cloned Data" visible="1">
+   </PIN>
+   <PIN pinname="Original Data" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="424">
+   <BOUNDS type="Box" left="21105" top="3960" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="21105" top="3960" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Read">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="424" srcpinname="Y Output Value" dstnodeid="425" dstpinname="Read">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="423">
+   <BOUNDS type="Box" left="18495" top="2145" width="1890" height="1860">
+   </BOUNDS>
+   <BOUNDS type="Node" left="18495" top="2145" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|{&cr;&lf;  &quot;action&quot; : {&cr;&lf;    &quot;type&quot; : &quot;NEXT_PAGE&quot;&cr;&lf;  },&cr;&lf;  &quot;state&quot; : {&cr;&lf;    &quot;knobs&quot; : {&cr;&lf;      &quot;1&quot; : {&cr;&lf;        &quot;knob1&quot; : 1,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;2&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;3&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;4&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      }&cr;&lf;    },&cr;&lf;    &quot;navigation&quot; : {&cr;&lf;      &quot;currentPage&quot; : 1&cr;&lf;    }&cr;&lf;  }&cr;&lf;}|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="{&quot;vvvv&quot;:&quot;awesome&quot;}">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="423" srcpinname="Output String" dstnodeid="425" dstpinname="Input">
+   </LINK>
+   <NODE systemname="GetItem (Json Path)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="GetItem (Json Path)" componentmode="Hidden" id="427">
+   <BOUNDS type="Node" left="20340" top="5955" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Path" visible="1" slicecount="1" values="state.knobs">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="426">
+   <BOUNDS type="Box" left="21120" top="5520" width="1635" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="21120" top="5520" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="state.knobs">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="426" srcpinname="Output String" dstnodeid="427" dstpinname="Path">
+   </LINK>
+   <LINK srcnodeid="425" srcpinname="Output" dstnodeid="427" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Split (Json Item)" filename="C:\lib-vvvv\Library\VL\Json\vl\VVVV.Value.JsonManipulator.vl" nodename="Item (Json Split)" componentmode="Hidden" id="430">
+   <BOUNDS type="Node" left="20355" top="6630" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="427" srcpinname="Output" dstnodeid="430" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="431">
+   <BOUNDS type="Box" left="19680" top="8250" width="510" height="1455">
+   </BOUNDS>
+   <BOUNDS type="Node" left="19680" top="8250" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="5">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="422" srcpinname="Name" dstnodeid="431" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="432">
+   <BOUNDS type="Box" left="20625" top="8235" width="510" height="1455">
+   </BOUNDS>
+   <BOUNDS type="Node" left="20625" top="8235" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="5">
+   </PIN>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="422" srcpinname="Value" dstnodeid="432" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="Split (Json Item)" filename="C:\lib-vvvv\Library\VL\Json\vl\VVVV.Value.JsonManipulator.vl" nodename="Item (Json Split)" componentmode="Hidden" id="436">
+   <BOUNDS type="Node" left="21720" top="8820" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Pair (Json Split)" filename="C:\lib-vvvv\Library\vl\Json\JsonManipulator\vl\VVVV.Value.JsonManipulator.vl" nodename="Pair (Json Split)" componentmode="Hidden" id="437">
+   <BOUNDS type="Node" left="21720" top="9390" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Value" visible="1">
+   </PIN>
+   <PIN pinname="Name" visible="1">
+   </PIN>
+   <PIN pinname="Content" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="439">
+   <BOUNDS type="Box" left="21405" top="10005" width="510" height="1455">
+   </BOUNDS>
+   <BOUNDS type="Node" left="21405" top="10005" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="5">
+   </PIN>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="438">
+   <BOUNDS type="Box" left="22350" top="9990" width="510" height="1455">
+   </BOUNDS>
+   <BOUNDS type="Node" left="22350" top="9990" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="5">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="437" srcpinname="Name" dstnodeid="439" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="437" srcpinname="Value" dstnodeid="438" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="GetSlice (Node)" nodename="GetSlice (Node)" componentmode="Hidden" id="440">
+   <BOUNDS type="Node" left="21720" top="8295" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Node" visible="1">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   <PIN pinname="Index" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="441">
+   <BOUNDS type="Box" left="22320" top="7815" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="22320" top="7815" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="441" srcpinname="Y Output Value" dstnodeid="440" dstpinname="Index">
+   </LINK>
+   <LINK srcnodeid="436" srcpinname="Output" dstnodeid="437" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="422" srcpinname="Content" dstnodeid="440" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="440" srcpinname="Output Node" dstnodeid="436" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="444">
+   <BOUNDS type="Box" left="20115" top="12540" width="840" height="1065">
+   </BOUNDS>
+   <BOUNDS type="Node" left="20115" top="12540" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="4" visible="1" values="Anton,Lutz,Marco,Fernando">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Array (Json Join)" filename="C:\lib-vvvv\Library\vl\Json\JsonManipulator\vl\VVVV.Value.JsonManipulator.vl" nodename="ToArray (Json Token Join)" componentmode="Hidden" id="442">
+   <BOUNDS type="Node" left="20115" top="14625" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="445">
+   <BOUNDS type="Node" left="17820" top="12540" width="540" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="17820" top="12540" width="1035" height="465">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="Array:">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
+   </PIN>
+   </NODE>
+   <NODE systemname="Array (Json Split)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="Array (Json Split)" componentmode="Hidden" id="446">
+   <BOUNDS type="Node" left="20115" top="15405" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="442" srcpinname="Output" dstnodeid="446" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="447">
+   <BOUNDS type="Box" left="20130" top="16275" width="840" height="1065">
+   </BOUNDS>
+   <BOUNDS type="Node" left="20130" top="16275" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="4" visible="1" values="Anton,Lutz,Marco,Fernando">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="446" srcpinname="Output" dstnodeid="447" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="448">
+   <BOUNDS type="Node" left="19065" top="14625" width="765" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="19065" top="14625" width="765" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|To Array|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="449">
+   <BOUNDS type="Node" left="19065" top="15405" width="765" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="19065" top="15405" width="945" height="285">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|From Array|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="450">
+   <BOUNDS type="Node" left="27210" top="1005" width="540" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="27210" top="1005" width="3300" height="645">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Create Items:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="23">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="456">
+   <BOUNDS type="Box" left="27630" top="2700" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="27630" top="2700" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.42">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="453">
+   <BOUNDS type="Box" left="28635" top="2700" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="28635" top="2700" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Hello">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="451">
+   <BOUNDS type="Box" left="29595" top="2700" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="29595" top="2700" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="42">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <NODE systemname="Pair (Json Join)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="Pair (Json Join)" componentmode="Hidden" id="460">
+   <BOUNDS type="Node" left="28560" top="4980" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Name" visible="1" slicecount="1" values="A">
+   </PIN>
+   <PIN pinname="Content" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="459">
+   <BOUNDS type="Box" left="28155" top="4500" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="28155" top="4500" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="A">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="459" srcpinname="Output String" dstnodeid="460" dstpinname="Name">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="457">
+   <BOUNDS type="Box" left="29385" top="4140" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="29385" top="4140" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="B">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="461">
+   <BOUNDS type="Node" left="26220" top="3165" width="855" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="26220" top="3165" width="855" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="Primitives">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="466">
+   <BOUNDS type="Node" left="26220" top="4965" width="855" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="26220" top="4965" width="855" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="Pairs">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="467">
+   <BOUNDS type="Node" left="26220" top="8010" width="855" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="26220" top="8010" width="855" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="Arrays">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="471">
+   <BOUNDS type="Box" left="28560" top="5985" width="840" height="1065">
+   </BOUNDS>
+   <BOUNDS type="Node" left="28560" top="5985" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="4" visible="1" values="Anton,Lutz,Marco,Fernando">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Array (Json Join)" filename="C:\lib-vvvv\Library\vl\Json\JsonManipulator\vl\VVVV.Value.JsonManipulator.vl" nodename="ToArray (Json Token Join)" componentmode="Hidden" id="469">
+   <BOUNDS type="Node" left="28560" top="8070" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="28560" top="8070">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="474">
+   <BOUNDS type="Node" left="19110" top="5955" width="975" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="19110" top="5955" width="975" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Get item &gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="475">
+   <BOUNDS type="Node" left="19110" top="6600" width="975" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="19110" top="6600" width="975" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Split item &gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="476">
+   <BOUNDS type="Node" left="19110" top="7515" width="975" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="19110" top="7515" width="975" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Split pair &gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="477">
+   <BOUNDS type="Node" left="17850" top="5865" width="540" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="17850" top="5865" width="1035" height="465">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="Item:">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="478">
+   <BOUNDS type="Node" left="33930" top="1005" width="540" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="33930" top="1005" width="2670" height="585">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Add Items:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="23">
+   </PIN>
+   </NODE>
+   <NODE systemname="Pair (Json Join)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="Pair (Json Join)" componentmode="Hidden" id="485">
+   <BOUNDS type="Node" left="34680" top="5925" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Content" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Name" visible="1" slicecount="10" values="0,1,2,3,4,5,6,7,8,9">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="482">
+   <BOUNDS type="Box" left="34155" top="3180" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="34155" top="3180" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="10">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="I (Spreads)" nodename="I (Spreads)" componentmode="Hidden" id="481">
+   <BOUNDS type="Node" left="33945" top="4005" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname=".. To [" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="482" srcpinname="Y Output Value" dstnodeid="481" dstpinname=".. To [">
+   </LINK>
+   <NODE systemname="FormatValue (String)" nodename="FormatValue (String)" componentmode="Hidden" id="480">
+   <BOUNDS type="Node" left="33960" top="5325" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="481" srcpinname="Output" dstnodeid="480" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="480" srcpinname="Output" dstnodeid="485" dstpinname="Name">
+   </LINK>
+   <NODE systemname="Group (Json Item Spectral)" filename="C:\lib-vvvv\Library\vl\Json\JsonManipulator\vl\VVVV.Value.JsonManipulator.vl" nodename="Group (Json Object Spectral)" componentmode="Hidden" id="479">
+   <BOUNDS type="Node" left="34680" top="7665" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="485" srcpinname="Output" dstnodeid="479" dstpinname="Input">
+   </LINK>
+   <NODE systemname="SpellValue (String)" nodename="SpellValue (String)" componentmode="Hidden" id="486">
+   <BOUNDS type="Node" left="35520" top="4530" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="481" srcpinname="Output" dstnodeid="486" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="494">
+   <BOUNDS type="Node" left="32925" top="7620" width="855" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="32925" top="7620" width="1545" height="525">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Join spread of items into one item:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="496">
+   <BOUNDS type="Box" left="33165" top="10305" width="1275" height="2595">
+   </BOUNDS>
+   <BOUNDS type="Node" left="33165" top="10305" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="1" values="|{&cr;&lf;  &quot;action&quot;: {&cr;&lf;    &quot;type&quot;: &quot;NEXT_PAGE&quot;&cr;&lf;  },&cr;&lf;  &quot;state&quot;: {&cr;&lf;    &quot;knobs&quot;: {&cr;&lf;      &quot;1&quot;: {&cr;&lf;        &quot;knob1&quot;: 1,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      },&cr;&lf;      &quot;2&quot;: {&cr;&lf;        &quot;knob1&quot;: 0,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      },&cr;&lf;      &quot;3&quot;: {&cr;&lf;        &quot;knob1&quot;: 0,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      },&cr;&lf;      &quot;4&quot;: {&cr;&lf;        &quot;knob1&quot;: 0,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      }&cr;&lf;    },&cr;&lf;    &quot;navigation&quot;: {&cr;&lf;      &quot;currentPage&quot;: 1&cr;&lf;    }&cr;&lf;  }&cr;&lf;}|">
+   </PIN>
+   </NODE>
+   <NODE systemname="AsString (Json)" filename="C:\lib-vvvv\Library\vl\Json\JsonManipulator\vl\VVVV.Value.JsonManipulator.vl" nodename="ToString (Json)" componentmode="Hidden" id="495">
+   <BOUNDS type="Node" left="33150" top="9630" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="495" srcpinname="Output" dstnodeid="496" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="479" srcpinname="Output" dstnodeid="495" dstpinname="Input">
+   </LINK>
+   <NODE systemname="AddToItem (Json)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="AddToItem (Json)" componentmode="Hidden" id="497">
+   <BOUNDS type="Node" left="36465" top="9555" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Content" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="479" srcpinname="Output" dstnodeid="497" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Pair (Json Join)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="Pair (Json Join)" componentmode="Hidden" id="499">
+   <BOUNDS type="Node" left="36975" top="8880" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Name" visible="1">
+   </PIN>
+   <PIN pinname="Content" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="499" srcpinname="Output" dstnodeid="497" dstpinname="Content">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="500">
+   <BOUNDS type="Box" left="36360" top="8430" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="36360" top="8430" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="A">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="500" srcpinname="Output String" dstnodeid="499" dstpinname="Name">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="503">
+   <BOUNDS type="Box" left="37635" top="8055" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="37635" top="8055" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.42">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="505">
+   <BOUNDS type="Box" left="36480" top="11070" width="1260" height="2670">
+   </BOUNDS>
+   <BOUNDS type="Node" left="36480" top="11070" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="1" values="|{&cr;&lf;  &quot;action&quot;: {&cr;&lf;    &quot;type&quot;: &quot;NEXT_PAGE&quot;&cr;&lf;  },&cr;&lf;  &quot;state&quot;: {&cr;&lf;    &quot;knobs&quot;: {&cr;&lf;      &quot;1&quot;: {&cr;&lf;        &quot;knob1&quot;: 1,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      },&cr;&lf;      &quot;2&quot;: {&cr;&lf;        &quot;knob1&quot;: 0,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      },&cr;&lf;      &quot;3&quot;: {&cr;&lf;        &quot;knob1&quot;: 0,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      },&cr;&lf;      &quot;4&quot;: {&cr;&lf;        &quot;knob1&quot;: 0,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      }&cr;&lf;    },&cr;&lf;    &quot;navigation&quot;: {&cr;&lf;      &quot;currentPage&quot;: 1&cr;&lf;    }&cr;&lf;  }&cr;&lf;}|">
+   </PIN>
+   </NODE>
+   <NODE systemname="AsString (Json)" filename="C:\lib-vvvv\Library\vl\Json\JsonManipulator\vl\VVVV.Value.JsonManipulator.vl" nodename="ToString (Json)" componentmode="Hidden" id="504">
+   <BOUNDS type="Node" left="36480" top="10440" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="504" srcpinname="Output" dstnodeid="505" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="497" srcpinname="Output" dstnodeid="504" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="506">
+   <BOUNDS type="Node" left="33030" top="5910" width="855" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="33030" top="5910" width="1350" height="510">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Create spread of pairs|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="507">
+   <BOUNDS type="Box" left="34920" top="6435" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="34920" top="6435" width="0" height="0">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="485" srcpinname="Output" dstnodeid="507" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="508">
+   <BOUNDS type="Node" left="35520" top="9555" width="855" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="35520" top="9555" width="900" height="300">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Add Item:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="509">
+   <BOUNDS type="Node" left="33870" top="2430" width="540" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="33870" top="2430" width="2670" height="585">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Add to Item:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="513">
+   <BOUNDS type="Box" left="41535" top="3315" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="41535" top="3315" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="10">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="I (Spreads)" nodename="I (Spreads)" componentmode="Hidden" id="512">
+   <BOUNDS type="Node" left="41325" top="3780" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname=".. To [" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="513" srcpinname="Y Output Value" dstnodeid="512" dstpinname=".. To [">
+   </LINK>
+   <NODE systemname="SpellValue (String)" nodename="SpellValue (String)" componentmode="Hidden" id="510">
+   <BOUNDS type="Node" left="41340" top="4440" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="512" srcpinname="Output" dstnodeid="510" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="515">
+   <BOUNDS type="Node" left="39720" top="2370" width="540" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="39720" top="2370" width="2175" height="540">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Add to Array:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
+   </PIN>
+   </NODE>
+   <NODE systemname="Array (Json Join)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="Array (Json Join)" componentmode="Hidden" id="516">
+   <BOUNDS type="Node" left="41355" top="5775" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="518">
+   <BOUNDS type="Box" left="40560" top="8025" width="1275" height="2595">
+   </BOUNDS>
+   <BOUNDS type="Node" left="40560" top="8025" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="1" values="|{&cr;&lf;  &quot;action&quot;: {&cr;&lf;    &quot;type&quot;: &quot;NEXT_PAGE&quot;&cr;&lf;  },&cr;&lf;  &quot;state&quot;: {&cr;&lf;    &quot;knobs&quot;: {&cr;&lf;      &quot;1&quot;: {&cr;&lf;        &quot;knob1&quot;: 1,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      },&cr;&lf;      &quot;2&quot;: {&cr;&lf;        &quot;knob1&quot;: 0,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      },&cr;&lf;      &quot;3&quot;: {&cr;&lf;        &quot;knob1&quot;: 0,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      },&cr;&lf;      &quot;4&quot;: {&cr;&lf;        &quot;knob1&quot;: 0,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      }&cr;&lf;    },&cr;&lf;    &quot;navigation&quot;: {&cr;&lf;      &quot;currentPage&quot;: 1&cr;&lf;    }&cr;&lf;  }&cr;&lf;}|">
+   </PIN>
+   </NODE>
+   <NODE systemname="AsString (Json)" filename="C:\lib-vvvv\Library\vl\Json\JsonManipulator\vl\VVVV.Value.JsonManipulator.vl" nodename="ToString (Json)" componentmode="Hidden" id="517">
+   <BOUNDS type="Node" left="40545" top="7350" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="517" srcpinname="Output" dstnodeid="518" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="516" srcpinname="Output" dstnodeid="517" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="519">
+   <BOUNDS type="Node" left="39285" top="5820" width="855" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="39285" top="5820" width="1785" height="480">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Create array out of spread of string items|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="AddToArray (Json)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="AddToArray (Json)" componentmode="Hidden" id="520">
+   <BOUNDS type="Node" left="43335" top="7260" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Content" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="516" srcpinname="Output" dstnodeid="520" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="523">
+   <BOUNDS type="Box" left="43860" top="6240" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="43860" top="6240" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Hello">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="525">
+   <BOUNDS type="Box" left="43365" top="8640" width="1365" height="2985">
+   </BOUNDS>
+   <BOUNDS type="Node" left="43365" top="8640" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="1" values="|{&cr;&lf;  &quot;action&quot;: {&cr;&lf;    &quot;type&quot;: &quot;NEXT_PAGE&quot;&cr;&lf;  },&cr;&lf;  &quot;state&quot;: {&cr;&lf;    &quot;knobs&quot;: {&cr;&lf;      &quot;1&quot;: {&cr;&lf;        &quot;knob1&quot;: 1,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      },&cr;&lf;      &quot;2&quot;: {&cr;&lf;        &quot;knob1&quot;: 0,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      },&cr;&lf;      &quot;3&quot;: {&cr;&lf;        &quot;knob1&quot;: 0,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      },&cr;&lf;      &quot;4&quot;: {&cr;&lf;        &quot;knob1&quot;: 0,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      }&cr;&lf;    },&cr;&lf;    &quot;navigation&quot;: {&cr;&lf;      &quot;currentPage&quot;: 1&cr;&lf;    }&cr;&lf;  }&cr;&lf;}|">
+   </PIN>
+   </NODE>
+   <NODE systemname="AsString (Json)" filename="C:\lib-vvvv\Library\vl\Json\JsonManipulator\vl\VVVV.Value.JsonManipulator.vl" nodename="ToString (Json)" componentmode="Hidden" id="524">
+   <BOUNDS type="Node" left="43350" top="7965" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="524" srcpinname="Output" dstnodeid="525" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="520" srcpinname="Output" dstnodeid="524" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="526">
+   <BOUNDS type="Node" left="42075" top="7305" width="855" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="42075" top="7305" width="1080" height="285">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Add to Array:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="527">
+   <BOUNDS type="Node" left="56385" top="1020" width="540" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="56385" top="1020" width="4545" height="690">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="Set/Replace:">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="23">
+   </PIN>
+   </NODE>
+   <NODE systemname="ToJson (Json)" filename="C:\Work\anton-workinprogress\JsonManipulator\vl\VVVV.Value.JsonManipulator.vl" nodename="JsonManipulator (Value)" componentmode="Hidden" id="530">
+   <BOUNDS type="Node" left="58530" top="5385" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="|{&cr;&lf;  &quot;action&quot; : {&cr;&lf;    &quot;type&quot; : &quot;NEXT_PAGE&quot;&cr;&lf;  },&cr;&lf;  &quot;state&quot; : {&cr;&lf;    &quot;knobs&quot; : {&cr;&lf;      &quot;1&quot; : {&cr;&lf;        &quot;knob1&quot; : 1,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;2&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;3&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;4&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      }&cr;&lf;    },&cr;&lf;    &quot;navigation&quot; : {&cr;&lf;      &quot;currentPage&quot; : 1&cr;&lf;    }&cr;&lf;  }&cr;&lf;}|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Read" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Cloned Data" visible="1">
+   </PIN>
+   <PIN pinname="Original Data" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="529">
+   <BOUNDS type="Box" left="59295" top="4530" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="59295" top="4530" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Read">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="529" srcpinname="Y Output Value" dstnodeid="530" dstpinname="Read">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="528">
+   <BOUNDS type="Box" left="56580" top="3150" width="1890" height="1860">
+   </BOUNDS>
+   <BOUNDS type="Node" left="56580" top="3150" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|{&cr;&lf;  &quot;action&quot; : {&cr;&lf;    &quot;type&quot; : &quot;NEXT_PAGE&quot;&cr;&lf;  },&cr;&lf;  &quot;state&quot; : {&cr;&lf;    &quot;knobs&quot; : {&cr;&lf;      &quot;1&quot; : {&cr;&lf;        &quot;knob1&quot; : 1,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;2&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;3&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;4&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      }&cr;&lf;    },&cr;&lf;    &quot;navigation&quot; : {&cr;&lf;      &quot;currentPage&quot; : 1&cr;&lf;    }&cr;&lf;  }&cr;&lf;}|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="{&quot;vvvv&quot;:&quot;awesome&quot;}">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="528" srcpinname="Output String" dstnodeid="530" dstpinname="Input">
+   </LINK>
+   <NODE systemname="SetValue (Json Path)" filename="C:\lib-vvvv\Library\VL\Json\vl\VVVV.Value.JsonManipulator.vl" nodename="SetItem (Json Path)" componentmode="Hidden" id="531">
+   <BOUNDS type="Node" left="58530" top="6900" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Path" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Token" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="530" srcpinname="Output" dstnodeid="531" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="532">
+   <BOUNDS type="Box" left="58965" top="6300" width="1530" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="58965" top="6300" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="state.knobs.1.knob1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="532" srcpinname="Output String" dstnodeid="531" dstpinname="Path">
+   </LINK>
+   <NODE systemname="AsString (Json)" filename="C:\lib-vvvv\Library\vl\Json\JsonManipulator\vl\VVVV.Value.JsonManipulator.vl" nodename="ToString (Json)" componentmode="Hidden" id="533">
+   <BOUNDS type="Node" left="57645" top="7815" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="531" srcpinname="Output" dstnodeid="533" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="534">
+   <BOUNDS type="Node" left="56430" top="2190" width="540" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="56430" top="2190" width="2175" height="540">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Set Value:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="535">
+   <BOUNDS type="Box" left="57630" top="8580" width="1770" height="6000">
+   </BOUNDS>
+   <BOUNDS type="Node" left="57630" top="8580" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|{&cr;&lf;  &quot;action&quot; : {&cr;&lf;    &quot;type&quot; : &quot;NEXT_PAGE&quot;&cr;&lf;  },&cr;&lf;  &quot;state&quot; : {&cr;&lf;    &quot;knobs&quot; : {&cr;&lf;      &quot;1&quot; : {&cr;&lf;        &quot;knob1&quot; : 1,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;2&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;3&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;4&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      }&cr;&lf;    },&cr;&lf;    &quot;navigation&quot; : {&cr;&lf;      &quot;currentPage&quot; : 1&cr;&lf;    }&cr;&lf;  }&cr;&lf;}|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="{&quot;vvvv&quot;:&quot;awesome&quot;}">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="533" srcpinname="Output" dstnodeid="535" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="537">
+   <BOUNDS type="Box" left="60780" top="5910" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="60780" top="5910" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="42">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <NODE systemname="ToJson (Json)" filename="C:\Work\anton-workinprogress\JsonManipulator\vl\VVVV.Value.JsonManipulator.vl" nodename="JsonManipulator (Value)" componentmode="Hidden" id="547">
+   <BOUNDS type="Node" left="64860" top="5430" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="|{&cr;&lf;  &quot;action&quot; : {&cr;&lf;    &quot;type&quot; : &quot;NEXT_PAGE&quot;&cr;&lf;  },&cr;&lf;  &quot;state&quot; : {&cr;&lf;    &quot;knobs&quot; : {&cr;&lf;      &quot;1&quot; : {&cr;&lf;        &quot;knob1&quot; : 1,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;2&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;3&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;4&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      }&cr;&lf;    },&cr;&lf;    &quot;navigation&quot; : {&cr;&lf;      &quot;currentPage&quot; : 1&cr;&lf;    }&cr;&lf;  }&cr;&lf;}|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Read" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Cloned Data" visible="1">
+   </PIN>
+   <PIN pinname="Original Data" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="546">
+   <BOUNDS type="Box" left="65625" top="4575" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="65625" top="4575" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Read">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="546" srcpinname="Y Output Value" dstnodeid="547" dstpinname="Read">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="545">
+   <BOUNDS type="Box" left="62910" top="3195" width="1890" height="1860">
+   </BOUNDS>
+   <BOUNDS type="Node" left="62910" top="3195" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|{&cr;&lf;  &quot;action&quot; : {&cr;&lf;    &quot;type&quot; : &quot;NEXT_PAGE&quot;&cr;&lf;  },&cr;&lf;  &quot;state&quot; : {&cr;&lf;    &quot;knobs&quot; : {&cr;&lf;      &quot;1&quot; : {&cr;&lf;        &quot;knob1&quot; : 1,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;2&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;3&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;4&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      }&cr;&lf;    },&cr;&lf;    &quot;navigation&quot; : {&cr;&lf;      &quot;currentPage&quot; : 1&cr;&lf;    }&cr;&lf;  }&cr;&lf;}|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="{&quot;vvvv&quot;:&quot;awesome&quot;}">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="545" srcpinname="Output String" dstnodeid="547" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="543">
+   <BOUNDS type="Box" left="65280" top="6420" width="1530" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="65280" top="6420" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="state.knobs.1.knob1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE systemname="AsString (Json)" filename="C:\lib-vvvv\Library\vl\Json\JsonManipulator\vl\VVVV.Value.JsonManipulator.vl" nodename="ToString (Json)" componentmode="Hidden" id="542">
+   <BOUNDS type="Node" left="63975" top="7860" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="541">
+   <BOUNDS type="Node" left="62760" top="2190" width="540" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="62760" top="2190" width="2175" height="540">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Replace Item:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="540">
+   <BOUNDS type="Box" left="63960" top="8625" width="1665" height="2385">
+   </BOUNDS>
+   <BOUNDS type="Node" left="63960" top="8625" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|{&cr;&lf;  &quot;action&quot; : {&cr;&lf;    &quot;type&quot; : &quot;NEXT_PAGE&quot;&cr;&lf;  },&cr;&lf;  &quot;state&quot; : {&cr;&lf;    &quot;knobs&quot; : {&cr;&lf;      &quot;1&quot; : {&cr;&lf;        &quot;knob1&quot; : 1,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;2&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;3&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;4&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      }&cr;&lf;    },&cr;&lf;    &quot;navigation&quot; : {&cr;&lf;      &quot;currentPage&quot; : 1&cr;&lf;    }&cr;&lf;  }&cr;&lf;}|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="{&quot;vvvv&quot;:&quot;awesome&quot;}">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="542" srcpinname="Output" dstnodeid="540" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="Replace (Json Path)" filename="C:\lib-vvvv\Library\vl\Json\vl\VVVV.Value.JsonManipulator.vl" nodename="ReplaceItem (Json Path)" componentmode="Hidden" id="544">
+   <BOUNDS type="Node" left="64860" top="6945" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Path" visible="1" slicecount="1" values="state.knobs.1.knob1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Token" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="547" srcpinname="Output" dstnodeid="544" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="543" srcpinname="Output String" dstnodeid="544" dstpinname="Path">
+   </LINK>
+   <LINK srcnodeid="544" srcpinname="Output" dstnodeid="542" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Pair (Json Join)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="Pair (Json Join)" componentmode="Hidden" id="549">
+   <BOUNDS type="Node" left="67485" top="6375" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Name" visible="1">
+   </PIN>
+   <PIN pinname="Content" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="549" srcpinname="Output" dstnodeid="544" dstpinname="Token">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="550">
+   <BOUNDS type="Box" left="67170" top="5835" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="67170" top="5835" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="MyKnob">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="550" srcpinname="Output String" dstnodeid="549" dstpinname="Name">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="552">
+   <BOUNDS type="Box" left="68430" top="5370" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="68430" top="5370" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.42">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="554">
+   <BOUNDS type="Node" left="26220" top="10980" width="5160" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="26220" top="10980" width="1605" height="1035">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Note, it&apos;s of course possible to plug an array into the Content of a Pair:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="Pair (Json Join)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="Pair (Json Join)" componentmode="Hidden" id="555">
+   <BOUNDS type="Node" left="28725" top="11565" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Name" visible="1" slicecount="1" values="A">
+   </PIN>
+   <PIN pinname="Content" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="558">
+   <BOUNDS type="Box" left="29580" top="8940" width="840" height="1065">
+   </BOUNDS>
+   <BOUNDS type="Node" left="29580" top="8940" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="4" visible="1" values="Anton,Lutz,Marco,Fernando">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Array (Json Join)" filename="C:\lib-vvvv\Library\vl\Json\JsonManipulator\vl\VVVV.Value.JsonManipulator.vl" nodename="ToArray (Json Token Join)" componentmode="Hidden" id="556">
+   <BOUNDS type="Node" left="29580" top="11025" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="29580" top="11025">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="556" srcpinname="Output" dstnodeid="555" dstpinname="Content">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="559">
+   <BOUNDS type="Box" left="28410" top="11070" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="28410" top="11070" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Names">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="559" srcpinname="Output String" dstnodeid="555" dstpinname="Name">
+   </LINK>
+   <NODE systemname="ToFloat (Json Item)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="ToFloat (Json Item)" componentmode="Hidden" id="455">
+   <BOUNDS type="Node" left="27645" top="3165" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="27645" top="3165">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="456" srcpinname="Y Output Value" dstnodeid="455" dstpinname="Input">
+   </LINK>
+   <NODE systemname="ToString (Json Item)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="ToString (Json Item)" componentmode="Hidden" id="454">
+   <BOUNDS type="Node" left="28620" top="3165" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <BOUNDS type="Box" left="28620" top="3165">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="453" srcpinname="Output String" dstnodeid="454" dstpinname="Input">
+   </LINK>
+   <NODE systemname="ToInteger (Json Item)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="ToInteger (Json Item)" componentmode="Hidden" id="452">
+   <BOUNDS type="Node" left="29595" top="3165" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <BOUNDS type="Box" left="29595" top="3165">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="451" srcpinname="Y Output Value" dstnodeid="452" dstpinname="Input">
+   </LINK>
+   <NODE systemname="ToString (Json Item)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="ToString (Json Item)" componentmode="Hidden" id="458">
+   <BOUNDS type="Node" left="29370" top="4590" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="458" srcpinname="Result" dstnodeid="460" dstpinname="Content">
+   </LINK>
+   <LINK srcnodeid="457" srcpinname="Output String" dstnodeid="458" dstpinname="Input">
+   </LINK>
+   <NODE systemname="ToString (Json Item)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="ToString (Json Item)" componentmode="Hidden" id="470">
+   <BOUNDS type="Node" left="28560" top="7425" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="Hello">
+   </PIN>
+   <BOUNDS type="Box" left="28560" top="7425">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="471" srcpinname="Output String" dstnodeid="470" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="470" srcpinname="Result" dstnodeid="469" dstpinname="Input">
+   </LINK>
+   <NODE systemname="ToString (Json Item)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="ToString (Json Item)" componentmode="Hidden" id="557">
+   <BOUNDS type="Node" left="29580" top="10380" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="Hello">
+   </PIN>
+   <BOUNDS type="Box" left="29580" top="10380">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="558" srcpinname="Output String" dstnodeid="557" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="557" srcpinname="Result" dstnodeid="556" dstpinname="Input">
+   </LINK>
+   <NODE systemname="ToString (Json Item)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="ToString (Json Item)" componentmode="Hidden" id="484">
+   <BOUNDS type="Node" left="35535" top="5430" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="Hello">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="484" srcpinname="Result" dstnodeid="485" dstpinname="Content">
+   </LINK>
+   <LINK srcnodeid="486" srcpinname="Output" dstnodeid="484" dstpinname="Input">
+   </LINK>
+   <NODE systemname="ToFloat (Json Item)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="ToFloat (Json Item)" componentmode="Hidden" id="502">
+   <BOUNDS type="Node" left="37650" top="8490" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="503" srcpinname="Y Output Value" dstnodeid="502" dstpinname="Input">
+   </LINK>
+   <NODE systemname="ToString (Json Item)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="ToString (Json Item)" componentmode="Hidden" id="522">
+   <BOUNDS type="Node" left="43860" top="6765" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="Hello">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="522" srcpinname="Result" dstnodeid="520" dstpinname="Content">
+   </LINK>
+   <LINK srcnodeid="523" srcpinname="Output String" dstnodeid="522" dstpinname="Input">
+   </LINK>
+   <NODE systemname="ToString (Json Item)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="ToString (Json Item)" componentmode="Hidden" id="514">
+   <BOUNDS type="Node" left="41355" top="5040" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="Hello">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="510" srcpinname="Output" dstnodeid="514" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="514" srcpinname="Result" dstnodeid="516" dstpinname="Input">
+   </LINK>
+   <NODE systemname="ToInteger (Json Item)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="ToInteger (Json Item)" componentmode="Hidden" id="536">
+   <BOUNDS type="Node" left="60765" top="6360" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="537" srcpinname="Y Output Value" dstnodeid="536" dstpinname="Input">
+   </LINK>
+   <NODE systemname="ToFloat (Json Item)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="ToFloat (Json Item)" componentmode="Hidden" id="551">
+   <BOUNDS type="Node" left="68430" top="5820" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="551" srcpinname="Result" dstnodeid="549" dstpinname="Content">
+   </LINK>
+   <LINK srcnodeid="552" srcpinname="Y Output Value" dstnodeid="551" dstpinname="Input">
+   </LINK>
+   <NODE systemname="ToString (Json Item)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="ToString (Json Item)" componentmode="Hidden" id="443">
+   <BOUNDS type="Node" left="20130" top="13980" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="Hello">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="444" srcpinname="Output String" dstnodeid="443" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="443" srcpinname="Result" dstnodeid="442" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="502" srcpinname="Result" dstnodeid="499" dstpinname="Content">
+   </LINK>
+   <LINK srcnodeid="430" srcpinname="Output" dstnodeid="422" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="536" srcpinname="Result" dstnodeid="531" dstpinname="Token">
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="585">
+   <BOUNDS type="Node" left="71565" top="1020" width="540" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="71565" top="1020" width="4545" height="690">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Remove Items:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="23">
+   </PIN>
+   </NODE>
+   <NODE systemname="ToJson (Json)" filename="C:\Work\anton-workinprogress\JsonManipulator\vl\VVVV.Value.JsonManipulator.vl" nodename="JsonManipulator (Value)" componentmode="Hidden" id="588">
+   <BOUNDS type="Node" left="73665" top="4605" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="|{&cr;&lf;  &quot;action&quot; : {&cr;&lf;    &quot;type&quot; : &quot;NEXT_PAGE&quot;&cr;&lf;  },&cr;&lf;  &quot;state&quot; : {&cr;&lf;    &quot;knobs&quot; : {&cr;&lf;      &quot;1&quot; : {&cr;&lf;        &quot;knob1&quot; : 1,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;2&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;3&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;4&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      }&cr;&lf;    },&cr;&lf;    &quot;navigation&quot; : {&cr;&lf;      &quot;currentPage&quot; : 1&cr;&lf;    }&cr;&lf;  }&cr;&lf;}|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Read" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Cloned Data" visible="1">
+   </PIN>
+   <PIN pinname="Original Data" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="587">
+   <BOUNDS type="Box" left="74430" top="3750" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="74430" top="3750" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Read">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="587" srcpinname="Y Output Value" dstnodeid="588" dstpinname="Read">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="586">
+   <BOUNDS type="Box" left="71715" top="2370" width="1890" height="1860">
+   </BOUNDS>
+   <BOUNDS type="Node" left="71715" top="2370" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|{&cr;&lf;  &quot;action&quot; : {&cr;&lf;    &quot;type&quot; : &quot;NEXT_PAGE&quot;&cr;&lf;  },&cr;&lf;  &quot;state&quot; : {&cr;&lf;    &quot;knobs&quot; : {&cr;&lf;      &quot;1&quot; : {&cr;&lf;        &quot;knob1&quot; : 1,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;2&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;3&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;4&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      }&cr;&lf;    },&cr;&lf;    &quot;navigation&quot; : {&cr;&lf;      &quot;currentPage&quot; : 1&cr;&lf;    }&cr;&lf;  }&cr;&lf;}|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="{&quot;vvvv&quot;:&quot;awesome&quot;}">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="586" srcpinname="Output String" dstnodeid="588" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Remove (Json Path)" filename="C:\lib-vvvv\Library\vl\Json\vl\VVVV.Value.JsonManipulator.vl" nodename="RemoveItem (Json Path)" componentmode="Hidden" id="589">
+   <BOUNDS type="Node" left="73665" top="5520" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Path" visible="1" slicecount="1" values="state.knobs.1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Token" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="588" srcpinname="Output" dstnodeid="589" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="590">
+   <BOUNDS type="Box" left="74775" top="5055" width="2280" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="74775" top="5055" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="state.knobs.1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="590" srcpinname="Output String" dstnodeid="589" dstpinname="Path">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="591">
+   <BOUNDS type="Box" left="73680" top="7185" width="1905" height="2385">
+   </BOUNDS>
+   <BOUNDS type="Node" left="73680" top="7185" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|{&cr;&lf;  &quot;action&quot; : {&cr;&lf;    &quot;type&quot; : &quot;NEXT_PAGE&quot;&cr;&lf;  },&cr;&lf;  &quot;state&quot; : {&cr;&lf;    &quot;knobs&quot; : {&cr;&lf;      &quot;1&quot; : {&cr;&lf;        &quot;knob1&quot; : 1,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;2&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;3&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;4&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      }&cr;&lf;    },&cr;&lf;    &quot;navigation&quot; : {&cr;&lf;      &quot;currentPage&quot; : 1&cr;&lf;    }&cr;&lf;  }&cr;&lf;}|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="{&quot;vvvv&quot;:&quot;awesome&quot;}">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="AsString (Json)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="AsString (Json)" componentmode="Hidden" id="596">
+   <BOUNDS type="Node" left="73665" top="6330" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="589" srcpinname="Output" dstnodeid="596" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="596" srcpinname="Output" dstnodeid="591" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="598">
+   <BOUNDS type="Node" left="47490" top="2310" width="540" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="47490" top="2310" width="2175" height="540">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Join Items|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
+   </PIN>
+   </NODE>
+   <NODE systemname="Pair (Json Join)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="Pair (Json Join)" componentmode="Hidden" id="599">
+   <BOUNDS type="Node" left="47550" top="4035" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Content" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Name" visible="1" slicecount="10" values="0,1,2,3,4,5,6,7,8,9">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="ToString (Json Item)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="ToString (Json Item)" componentmode="Hidden" id="600">
+   <BOUNDS type="Node" left="48315" top="3435" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="600" srcpinname="Result" dstnodeid="599" dstpinname="Content">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="601">
+   <BOUNDS type="Box" left="47130" top="3495" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="47130" top="3495" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="String">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="601" srcpinname="Output String" dstnodeid="599" dstpinname="Name">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="602">
+   <BOUNDS type="Box" left="48330" top="3060" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="48330" top="3060" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="A">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="602" srcpinname="Output String" dstnodeid="600" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Pair (Json Join)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="Pair (Json Join)" componentmode="Hidden" id="606">
+   <BOUNDS type="Node" left="50010" top="4020" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Content" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Name" visible="1" slicecount="10" values="0,1,2,3,4,5,6,7,8,9">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="604">
+   <BOUNDS type="Box" left="49590" top="3480" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="49590" top="3480" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Integer">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="604" srcpinname="Output String" dstnodeid="606" dstpinname="Name">
+   </LINK>
+   <NODE systemname="ToInteger (Json Item)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="ToInteger (Json Item)" componentmode="Hidden" id="605">
+   <BOUNDS type="Node" left="50775" top="3420" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="605" srcpinname="Result" dstnodeid="606" dstpinname="Content">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="607">
+   <BOUNDS type="Box" left="50775" top="3030" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="50775" top="3030" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="42">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="607" srcpinname="Y Output Value" dstnodeid="605" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Pair (Json Join)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="Pair (Json Join)" componentmode="Hidden" id="611">
+   <BOUNDS type="Node" left="52440" top="4095" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Content" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Name" visible="1" slicecount="10" values="0,1,2,3,4,5,6,7,8,9">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="610">
+   <BOUNDS type="Box" left="52020" top="3555" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="52020" top="3555" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Float">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="610" srcpinname="Output String" dstnodeid="611" dstpinname="Name">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="608">
+   <BOUNDS type="Box" left="53205" top="3105" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="53205" top="3105" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="42">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <NODE systemname="ToFloat (Json Item)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="ToFloat (Json Item)" componentmode="Hidden" id="609">
+   <BOUNDS type="Node" left="53205" top="3495" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="609" srcpinname="Result" dstnodeid="611" dstpinname="Content">
+   </LINK>
+   <LINK srcnodeid="608" srcpinname="Y Output Value" dstnodeid="609" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Group (Json Item Spectral)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="Group (Json Item Spectral)" componentmode="Hidden" id="613">
+   <BOUNDS type="Node" left="49710" top="6315" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="615">
+   <BOUNDS type="Box" left="49710" top="7740" width="1275" height="2595">
+   </BOUNDS>
+   <BOUNDS type="Node" left="49710" top="7740" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="1" values="|{&cr;&lf;  &quot;action&quot;: {&cr;&lf;    &quot;type&quot;: &quot;NEXT_PAGE&quot;&cr;&lf;  },&cr;&lf;  &quot;state&quot;: {&cr;&lf;    &quot;knobs&quot;: {&cr;&lf;      &quot;1&quot;: {&cr;&lf;        &quot;knob1&quot;: 1,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      },&cr;&lf;      &quot;2&quot;: {&cr;&lf;        &quot;knob1&quot;: 0,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      },&cr;&lf;      &quot;3&quot;: {&cr;&lf;        &quot;knob1&quot;: 0,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      },&cr;&lf;      &quot;4&quot;: {&cr;&lf;        &quot;knob1&quot;: 0,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      }&cr;&lf;    },&cr;&lf;    &quot;navigation&quot;: {&cr;&lf;      &quot;currentPage&quot;: 1&cr;&lf;    }&cr;&lf;  }&cr;&lf;}|">
+   </PIN>
+   </NODE>
+   <NODE systemname="AsString (Json)" filename="C:\lib-vvvv\Library\vl\Json\JsonManipulator\vl\VVVV.Value.JsonManipulator.vl" nodename="ToString (Json)" componentmode="Hidden" id="614">
+   <BOUNDS type="Node" left="49695" top="7065" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="614" srcpinname="Output" dstnodeid="615" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="613" srcpinname="Output" dstnodeid="614" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Cons (Json Item)" filename="vl\VVVV.Value.JsonManipulator.vl" nodename="Cons (Json Item)" componentmode="Hidden" id="612">
+   <BOUNDS type="Node" left="49695" top="5250" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="599" srcpinname="Output" dstnodeid="612" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="606" srcpinname="Output" dstnodeid="612" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="611" srcpinname="Output" dstnodeid="612" dstpinname="Input 3">
+   </LINK>
+   <LINK srcnodeid="612" srcpinname="Output" dstnodeid="613" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="616">
+   <BOUNDS type="Node" left="51435" top="5220" width="17250" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="51435" top="5220" width="2925" height="1785">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt;  Whatch out for the BinSize pins, most of the time you don&apos;t need them, but they are there. In oder to be able to stack several Cons nodes into each other. This is VL limitation at the moment, that we can&apos;t have Cons with dynamic input count.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="617">
+   <BOUNDS type="Box" left="48555" top="5760" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="48555" top="5760" width="0" height="0">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="612" srcpinname="Output" dstnodeid="617" dstpinname="Input Node">
+   </LINK>
+   </PATCH>

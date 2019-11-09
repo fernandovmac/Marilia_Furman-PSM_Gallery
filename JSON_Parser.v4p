@@ -1,0 +1,541 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
+   <PATCH nodename="C:\Marilia_Furman-PSM_Gallery\JSON_Parser.v4p" systemname="JSON_Parser" filename="C:\Users\Fernando Visockis\Desktop\JSON_Parser.v4p" scrollx="0" scrolly="-360">
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="2" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2643" top="9008" width="1352" height="920">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2643" top="9008" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="1" values="|{&cr;&lf;  &quot;action&quot;: {&cr;&lf;    &quot;type&quot;: &quot;NEXT_PAGE&quot;&cr;&lf;  },&cr;&lf;  &quot;state&quot;: {&cr;&lf;    &quot;knobs&quot;: {&cr;&lf;      &quot;1&quot;: {&cr;&lf;        &quot;knob1&quot;: 1,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      },&cr;&lf;      &quot;2&quot;: {&cr;&lf;        &quot;knob1&quot;: 0,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      },&cr;&lf;      &quot;3&quot;: {&cr;&lf;        &quot;knob1&quot;: 0,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      },&cr;&lf;      &quot;4&quot;: {&cr;&lf;        &quot;knob1&quot;: 0,&cr;&lf;        &quot;knob2&quot;: 0&cr;&lf;      }&cr;&lf;    },&cr;&lf;    &quot;navigation&quot;: {&cr;&lf;      &quot;currentPage&quot;: 1&cr;&lf;    }&cr;&lf;  }&cr;&lf;}|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Legenda">
+   </PIN>
+   </NODE>
+   <NODE systemname="S+H (String)" nodename="S+H (String)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="2674" top="8528" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Set" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="3100" top="3636" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Count" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Intersperse" slicecount="1" values="Dot">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
+   <PIN pinname="Input 4" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="3060" top="2692" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" slicecount="1" visible="1" values="grupo">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="3220" top="2332" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="SubType" slicecount="1" values="|Integer (MinInt .. MaxInt)|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" visible="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="8" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="3044" top="2020" width="1068" height="252">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3044" top="2020" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="grupo">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="5028" top="3380" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="SubType" slicecount="1" values="|Integer (MinInt .. MaxInt)|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" visible="1" values="2">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="10" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="3252" top="3092" width="696" height="208">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3252" top="3092" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="ID">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="11" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="3612" top="3340" width="696" height="208">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3612" top="3340" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="text">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Random (Value)" nodename="Random (Value)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="5028" top="2660" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Is Integer" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Scale" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="19" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2972" top="7304" width="1200" height="224">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2972" top="7304" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="21" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1500" top="2108" width="696" height="208">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="2108" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|{&cr;&lf;  &quot;grupo1&quot; :{&cr;&lf;    &quot;nome&quot; : &quot;algo grande no rio&quot;,&cr;&lf;    &quot;ID&quot; : {&cr;&lf;&cr;&lf;        &quot;0&quot; : {&cr;&lf;            &quot;text&quot; : &quot;155 mil homens, 14.200 barcos, 600 navios&quot;,&cr;&lf;        },&cr;&lf;        &quot;1&quot; : {&cr;&lf;            &quot;text&quot; : &quot;No verão de 2003 observou-se que o Spree corria no sentido inverso do normal na zona de  Köpenik&quot;,&cr;&lf;      },&cr;&lf;        &quot;2&quot; : {&cr;&lf;        &tab;&quot;text&quot; : &quot;Barco é um artefato construído por um ser humano, capaz de flutuar e se deslocar sobre a água&quot; ,&cr;&lf;&cr;&lf;        },&cr;&lf;        &quot;3&quot; : {&cr;&lf;          &quot;text&quot; : &quot;Barco é um artefato construído por um ser humano, capaz de flutuar e se deslocar sobre a água&quot; ,&cr;&lf;&cr;&lf;        }&cr;&lf;    }&cr;&lf;},&cr;&lf;  &quot;grupo2&quot; :{&cr;&lf;    &quot;nome&quot; : &quot;algo pequeno no rio&quot;,&cr;&lf;    &quot;ID&quot; : {&cr;&lf;&cr;&lf;        &quot;0&quot; : {&cr;&lf;            &quot;text&quot; : &quot;Barco Higgins - LCVP (lancha de desembarque de veículos e pessoal)&quot;,&cr;&lf;        },&cr;&lf;        &quot;1&quot; : {&cr;&lf;            &quot;text&quot; : &quot;navegar é preciso, viver não é preciso- Fernando Pessoa&quot;,&cr;&lf;      },&cr;&lf;        &quot;2&quot; : {&cr;&lf;        &tab;&quot;text&quot; : &quot;encontre caiaque com as melhores ofertas e promoções&quot;,&cr;&lf;&cr;&lf;        },&cr;&lf;        &quot;3&quot; : {&cr;&lf;          &quot;text&quot; : &quot;encontre caiaque com as melhores ofertas e promoções&quot;,&cr;&lf;&cr;&lf;        }&cr;&lf;    }&cr;&lf;},&cr;&lf;  &quot;grupo3&quot; :{&cr;&lf;    &quot;nome&quot; : &quot;uma pessoa passando&quot;,&cr;&lf;    &quot;ID&quot; : {&cr;&lf;&cr;&lf;        &quot;0&quot; : {&cr;&lf;            &quot;text&quot; : &quot;suspeito: homem, negro, 22 anos&quot;,&cr;&lf;        },&cr;&lf;        &quot;1&quot; : {&cr;&lf;            &quot;text&quot; : &quot;suspeito: homem de turbante, 30 anos, 1,85m, carrega uma mochila preta&quot;,&cr;&lf;        },&cr;&lf;        &quot;2&quot; : {&cr;&lf;        &tab;&quot;text&quot; : &quot;hoje é um bom dia para caminhar&quot;,&cr;&lf;        },&cr;&lf;        &quot;3&quot; : {&cr;&lf;        &tab;&quot;text&quot; : &quot;bom dia&quot;,&cr;&lf;        }&cr;&lf;    }&cr;&lf;},&cr;&lf;  &quot;grupo4&quot; :{&cr;&lf;    &quot;nome&quot; : &quot;duas pessoas passando&quot;,&cr;&lf;    &quot;ID&quot; : {&cr;&lf;  &tab;&tab;&quot;0&quot; : {&cr;&lf;            &quot;text&quot; : &quot;modelo Isabel Teixera é vista com novo namorado&quot;,&cr;&lf;        },&cr;&lf;        &quot;1&quot; : {&cr;&lf;            &quot;text&quot; : &quot;nas ruas de berlin é possível sempre ver casais apaixonados caminhando&quot;,&cr;&lf;      },&cr;&lf;        &quot;2&quot; : {&cr;&lf;            &quot;text&quot; : &quot;suspeito é levado preso&quot;,&cr;&lf;      },&cr;&lf;        &quot;3&quot; : {&cr;&lf;            &quot;text&quot; : &quot;idosos necessitam acompanhantes&quot;,&cr;&lf;      }&cr;&lf;    }&cr;&lf;},&cr;&lf;  &quot;grupo5&quot; :{&cr;&lf;    &quot;nome&quot; : &quot;3+ pessoas&quot;,&cr;&lf;    &quot;ID&quot; : {&cr;&lf;  &tab;&tab;&quot;0&quot; : {&cr;&lf;            &quot;text&quot; : &quot;Uma passeata pela moralização da política acontece agora na Schonenberg ufer, na altura do numero 60&quot;,&cr;&lf;        },&cr;&lf;        &quot;1&quot; : {&cr;&lf;            &quot;text&quot; : &quot;Uma passeata pela facilitação da posse de armas acontece agora na altura do n60&quot;,&cr;&lf;      },&cr;&lf;        &quot;2&quot; : {&cr;&lf;            &quot;text&quot; : &quot;Pessoas caminham&quot;,&cr;&lf;      },&cr;&lf;      &quot;3&quot; : {&cr;&lf;          &quot;text&quot; : &quot;Pessoas caminham&quot;,&cr;&lf;    }&cr;&lf;    }&cr;&lf;},&cr;&lf;  &quot;grupo6&quot; :{&cr;&lf;    &quot;nome&quot; : &quot;pessoa entrando/saindo&quot;,&cr;&lf;    &quot;ID&quot; : {&cr;&lf;  &tab;&tab;&quot;0&quot; : {&cr;&lf;            &quot;text&quot; : &quot;e ela foi embora, sem nada dizer&quot;,&cr;&lf;        },&cr;&lf;        &quot;1&quot; : {&cr;&lf;            &quot;text&quot; : &quot;numa manhã de domingo, ela partiu&quot;,&cr;&lf;      },&cr;&lf;        &quot;2&quot; : {&cr;&lf;            &quot;text&quot; : &quot;suspeito foge&quot;,&cr;&lf;      },&cr;&lf;      &quot;3&quot; : {&cr;&lf;          &quot;text&quot; : &quot;suspeito foge&quot;,&cr;&lf;    }&cr;&lf;&cr;&lf;},&cr;&lf;  &quot;grupo7&quot; :{&cr;&lf;    &quot;nome&quot; : &quot;pessoas entrando/saindo&quot;,&cr;&lf;    &quot;ID&quot; : {&cr;&lf;  &tab;&tab;&quot;0&quot; : {&cr;&lf;            &quot;text&quot; : &quot;modelo acompanhada de moreno misterioso é vista adentrando galeria PSM&quot;,&cr;&lf;        },&cr;&lf;        &quot;1&quot; : {&cr;&lf;            &quot;text&quot; : &quot;dupla de radicais tenta invadir o prédio&quot;,&cr;&lf;      },&cr;&lf;        &quot;2&quot; : {&cr;&lf;            &quot;text&quot; : &quot;casal que estaria desaparecido é visto entrando em prédio em mitte&quot;,&cr;&lf;      },&cr;&lf;      &quot;3&quot; : {&cr;&lf;          &quot;text&quot; : &quot;casal que estaria desaparecido é visto entrando em prédio em mitte&quot;,&cr;&lf;    }&cr;&lf;    }&cr;&lf;},&cr;&lf;  &quot;grupo8&quot; :{&cr;&lf;    &quot;nome&quot; : &quot;1 moto&quot;,&cr;&lf;    &quot;ID&quot; : {&cr;&lf;  &tab;&tab;&quot;0&quot; : {&cr;&lf;            &quot;text&quot; : &quot;motoboy: vida loka&quot;,&cr;&lf;        },&cr;&lf;        &quot;1&quot; : {&cr;&lf;            &quot;text&quot; : &quot;harley Davidson&quot;,&cr;&lf;      },&cr;&lf;      &quot;2&quot; : {&cr;&lf;            &quot;text&quot; : &quot;motoboy: vida loka&quot;,&cr;&lf;        },&cr;&lf;        &quot;3&quot; : {&cr;&lf;            &quot;text&quot; : &quot;harley Davidson&quot;,&cr;&lf;      }&cr;&lf;    }&cr;&lf;},&cr;&lf;  &quot;grupo9&quot; :{&cr;&lf;    &quot;nome&quot; : &quot;2+ motos&quot;,&cr;&lf;    &quot;ID&quot; : {&cr;&lf;  &tab;&tab;&quot;0&quot; : {&cr;&lf;            &quot;text&quot; : &quot;hells angels passam&quot;,&cr;&lf;        },&cr;&lf;        &quot;1&quot; : {&cr;&lf;            &quot;text&quot; : &quot;harley Davidson festival&quot;,&cr;&lf;      },&cr;&lf;      &quot;2&quot; : {&cr;&lf;            &quot;text&quot; : &quot;hells angels passam&quot;,&cr;&lf;        },&cr;&lf;        &quot;3&quot; : {&cr;&lf;            &quot;text&quot; : &quot;harley Davidson festival&quot;,&cr;&lf;      }&cr;&lf;    }&cr;&lf;},&cr;&lf;  &quot;grupo10&quot; :{&cr;&lf;    &quot;nome&quot; : &quot;onibus&quot;,&cr;&lf;    &quot;ID&quot; : {&cr;&lf;  &tab;&tab;&quot;0&quot; : {&cr;&lf;            &quot;text&quot; : &quot;M49 Heerstr./Nennhauser Damm – Hertzalle&quot;,&cr;&lf;        },&cr;&lf;        &quot;1&quot; : {&cr;&lf;            &quot;text&quot; : &quot;M48&quot;,&cr;&lf;      },&cr;&lf;      &quot;2&quot; : {&cr;&lf;            &quot;text&quot; : &quot;M49 Heerstr./Nennhauser Damm – Hertzalle&quot;,&cr;&lf;        },&cr;&lf;        &quot;3&quot; : {&cr;&lf;            &quot;text&quot; : &quot;M48&quot;,&cr;&lf;      }&cr;&lf;    }&cr;&lf;}&cr;&lf;&cr;&lf;}&cr;&lf;|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|JSON Input|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="2" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Output String" dstnodeid="6" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="6" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="5" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Output String" dstnodeid="5" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Output" dstnodeid="5" dstpinname="Input 3">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Output String" dstnodeid="5" dstpinname="Input 4">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="19" dstpinname="Input String">
+   </LINK>
+   <BOUNDS type="Window" left="4488" top="4680" width="15432" height="10896">
+   </BOUNDS>
+   <PACK Name="dx11.particles" Version="1.0.2">
+   </PACK>
+   <PACK Name="VVVV.Packs.Image" Version="0.2.0">
+   </PACK>
+   <PACK Name="addonpack" Version="38.1.0">
+   </PACK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="25">
+   <BOUNDS type="Box" left="5168" top="8996" width="696" height="208">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5168" top="8996" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Posed query|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Output String" dstnodeid="25" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="GetItem (Json Path)" filename="%VVVV%\packs\Json\vl\VVVV.Value.JsonManipulator.vl" nodename="GetItem (Json Path)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="2684" top="7680" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Path" visible="1" slicecount="1" values="grupo2.ID.0.texto">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Output String" dstnodeid="0" dstpinname="Path">
+   </LINK>
+   <NODE systemname="ToJson (Json)" filename="%VVVV%\packs\Json\vl\VVVV.Value.JsonManipulator.vl" nodename="ToJson (Json)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="1524" top="2956" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="|{&cr;&lf;  &quot;action&quot; : {&cr;&lf;    &quot;type&quot; : &quot;NEXT_PAGE&quot;&cr;&lf;  },&cr;&lf;  &quot;state&quot; : {&cr;&lf;    &quot;knobs&quot; : {&cr;&lf;      &quot;1&quot; : {&cr;&lf;        &quot;knob1&quot; : 1,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;2&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;3&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      },&cr;&lf;      &quot;4&quot; : {&cr;&lf;        &quot;knob1&quot; : 0,&cr;&lf;        &quot;knob2&quot; : 0&cr;&lf;      }&cr;&lf;    },&cr;&lf;    &quot;navigation&quot; : {&cr;&lf;      &quot;currentPage&quot; : 1&cr;&lf;    }&cr;&lf;  }&cr;&lf;}|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Read" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Cloned Data" visible="1">
+   </PIN>
+   <PIN pinname="Original Data" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Output String" dstnodeid="1" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="0" dstpinname="Input" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="1500" y="4955">
+   </LINKPOINT>
+   <LINKPOINT x="2756" y="5937">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="AsString (Json)" filename="%VVVV%\packs\Json\vl\VVVV.Value.JsonManipulator.vl" nodename="AsString (Json)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="2692" top="8112" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Output" dstnodeid="4" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="3" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="58">
+   <BOUNDS type="Box" left="7620" top="240" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7620" top="240" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="motorcycle">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Chosen detected class|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="59">
+   <BOUNDS type="Box" left="8976" top="384" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8976" top="384" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Amount of objects|">
+   </PIN>
+   </NODE>
+   <NODE systemname="group_selector" filename="group_selector.v4p" nodename="group_selector.v4p" componentmode="Hidden" id="60">
+   <BOUNDS type="Node" left="7696" top="2573" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2288" top="0" width="10816" height="8900">
+   </BOUNDS>
+   <BOUNDS type="Window" left="-2040" top="5304" width="16764" height="9504">
+   </BOUNDS>
+   <PIN pinname="Tracked srt group" visible="1">
+   </PIN>
+   <PIN pinname="centerXY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="59" srcpinname="Y Output Value" dstnodeid="60" dstpinname="Amount of objects">
+   </LINK>
+   <LINK srcnodeid="58" srcpinname="Output String" dstnodeid="60" dstpinname="Detected class">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Output" dstnodeid="9" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="62">
+   <BOUNDS type="Box" left="7704" top="5868" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7704" top="5868" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Tracked srt group|">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="S+H (Animation)" nodename="S+H (Animation)" componentmode="Hidden" id="63">
+   <BOUNDS type="Node" left="7692" top="3180" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="64">
+   <BOUNDS type="Node" left="2604" top="528" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2604" top="528" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Read-Set">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="64" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Read">
+   </LINK>
+   <LINK srcnodeid="64" srcpinname="Y Output Value" dstnodeid="63" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="60" srcpinname="Tracked srt group" dstnodeid="63" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Counter (Animation)" nodename="Counter (Animation)" componentmode="Hidden" id="65">
+   <BOUNDS type="Node" left="11364" top="2448" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Up" visible="1">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" visible="1" values="5">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="64" srcpinname="Y Output Value" dstnodeid="65" dstpinname="Up">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="66">
+   <BOUNDS type="Box" left="11400" top="2904" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11400" top="2904" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="65" srcpinname="Output" dstnodeid="66" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="67">
+   <BOUNDS type="Node" left="11448" top="3324" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="5">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Inverse Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="68">
+   <BOUNDS type="Node" left="7584" top="3660" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="11">
+   </PIN>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="63" srcpinname="Output" dstnodeid="68" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="66" srcpinname="Y Output Value" dstnodeid="67" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="67" srcpinname="Output" dstnodeid="68" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="68" srcpinname="Output" dstnodeid="62" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="68" srcpinname="Output" dstnodeid="7" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="69">
+   <BOUNDS type="Node" left="12360" top="3252" width="1716" height="240">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12360" top="3252" width="1188" height="792">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|legendas sobre o tempo|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="70">
+   <BOUNDS type="Node" left="11232" top="4056" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="67" srcpinname="Output" dstnodeid="70" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="71">
+   <BOUNDS type="Box" left="11208" top="7980" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11208" top="7980" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Legendas sobre o tempo|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="70" srcpinname="Up Edge" dstnodeid="71" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="72">
+   <BOUNDS type="Box" left="13500" top="7644" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13500" top="7644" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Rects enabled|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="67" srcpinname="Inverse Output" dstnodeid="72" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="73">
+   <BOUNDS type="Box" left="12948" top="2436" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12948" top="2436" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="16">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="73" srcpinname="Y Output Value" dstnodeid="65" dstpinname="Maximum">
+   </LINK>
+   <LINK srcnodeid="73" srcpinname="Y Output Value" dstnodeid="67" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="74">
+   <BOUNDS type="Node" left="11940" top="372" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11940" top="372" width="792" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="centerXY">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="74" srcpinname="Y Output Value" dstnodeid="60" dstpinname="centerXY">
+   </LINK>
+   <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="81">
+   <BOUNDS type="Node" left="1944" top="4284" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1944" top="4284" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="64" srcpinname="Y Output Value" dstnodeid="81" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="64" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Set">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="82">
+   <BOUNDS type="Box" left="5040" top="4056" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5040" top="4056" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Output" dstnodeid="82" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="83">
+   <BOUNDS type="Node" left="5160" top="696" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Period" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="Change" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="83" srcpinname="Change" dstnodeid="12" dstpinname="Enabled">
+   </LINK>
+   </PATCH>

@@ -1,0 +1,278 @@
+{
+  "grupo0" :{
+    "nome" : "barco",
+    "ID" : {
+
+        "0" : {
+            "text" : "155,000 men, 14,200 boats, 600 ships",
+        },
+        "1" : {
+            "text" : "In Summer 2003 it was observed that the Spree was running in the opposite direction of normal in Köpenick area",
+      },
+        "2" : {
+          "text" : "Boat is an artefact built by a human being, that can float and move on water" ,
+
+        },
+        "3" : {
+          "text" : " ”Sailing is necessary, living is not” -  Fernando Pessoa" ,
+
+        },
+        "4" : {
+          "text" : "Find the best promotions and offers for kayak" ,
+
+        }
+    }
+},
+  "grupo1" :{
+    "nome" : "1 ou 2 carro",
+    "ID" : {
+
+        "0" : {
+            "text" : " VW has had a major push to sell diesel cars in the US, backed by a huge marketing campaign trumpeting its cars' low emissions.",
+        },
+        "1" : {
+            "text" : "Alert: car out of carbon emission standards set by German Green license",
+      },
+        "2" : {
+        	"text" : "Stolen car" ,
+
+        },
+        "3" : {
+          "text" : "The last model in the year, the favourite car among successful artists" ,
+
+        },
+        "4" : {
+          "text" : "Eco-friendly cars are the new frontier of automobile industry " ,
+
+        }
+    }
+},
+  "grupo2" :{
+    "nome" : "3+ carros",
+    "ID" : {
+
+        "0" : {
+            "text" : "Intense traffic on Schöneberger Ufer now",
+        },
+        "1" : {
+            "text" : "Serious accident leaves 2 dead and 5 injured victims. Driver was under effect of narcotics",
+      },
+        "2" : {
+        	"text" : "Privatizing all roads in the country will streamline the traffic and reduce bureaucratization in all tolls",
+
+        },
+        "3" : {
+          "text" : "Third world gonna explode. Third Reich has nothing to do with it",
+
+        },
+        "4" : {
+          "text" : "11 million people, almost 6 million automobiles; an accident every 3 minutes; a dead person every 6 hours; 8 fatal victims of pollution every day",
+
+        }
+    }
+},
+  "grupo3" :{
+    "nome" : "uma pessoa passando",
+    "ID" : {
+
+        "0" : {
+            "text" : "Suspect: 22-year-old black man",
+        },
+        "1" : {
+            "text" : "Suspect: 1,85m 30-year-old turbaned man, wearing a black backpack",
+      },
+        "2" : {
+        	"text" : "Income taxes debtor alert" ,
+
+        },
+        "3" : {
+          "text" : "This man is creator of gay kit in schools. If you respect children, do not vote in him" ,
+
+        },
+        "4" : {
+          "text" : "Learn the current greatest entrepreneurs " ,
+
+        }
+    }
+},
+  "grupo4" :{
+    "nome" : "duas pessoas passando",
+    "ID" : {
+  		"0" : {
+            "text" : "Model Isabel Teixera is seen with a new boyfriend",
+        },
+        "1" : {
+            "text" : "In Berlin streets you can always see couples in love walking",
+      },
+        "2" : {
+            "text" : "Suspect is arrested now in Schöneberger Ufer",
+      },
+        "3" : {
+            "text" : "Elderly needs escorts",
+      },
+      "4" : {
+        "text" : "Couples who walk together stay together for longer, reveals study",
+      }
+    }
+},
+  "grupo5" :{
+    "nome" : "3+ pessoas passando",
+    "ID" : {
+  		"0" : {
+            "text" : "A protest for politics moralization happens now on around number 60 of Schöneberger Ufer",
+        },
+        "1" : {
+            "text" : "A march pro-gun-ownership happens now around number 60",
+      },
+        "2" : {
+            "text" : "Doctors alert: an everyday 20-minute-walk reduces in 70%the risk of a heart attack",
+      },
+      "3" : {
+          "text" : "Black blocs attack on public property and disrespect private property",
+    },
+    "4" : {
+      "text" : "When would we imagine an expressive march pro-government and unpopular reform? The country wins!",
+    }
+  }
+},
+  "grupo6" :{
+    "nome" : "pessoa entrando/saindo",
+    "ID" : {
+  		"0" : {
+            "text" : "In a Sunday morning, she left without saying anything",
+        },
+        "1" : {
+            "text" : "Suspect is seen by cameras running away from the local",
+      },
+        "2" : {
+            "text" : "See common behaviour among paedophiles and learn how to avoid children to be abused",
+      },
+      "3" : {
+          "text" : "Trends for the summer ",
+    },
+      "4" : {
+        "text" : "Every move you make, every step you take, I will be watching you",
+      }
+  }
+},
+  "grupo7" :{
+    "nome" : "2 pessoas entrando/saindo",
+    "ID" : {
+  		"0" : {
+            "text" : "Model escorted by mysterious dark-hair man was seen getting into PSM gallery",
+        },
+        "1" : {
+            "text" : "Couple who was believed to be missed is seen getting into a building in Schöneberger Ufer",
+      },
+        "2" : {
+            "text" : "Mayor escorted by assessor leaves the building in this moment” ",
+      },
+      "3" : {
+          "text" : "What are the most visited galleries by famous couples",
+    },
+    "4" : {
+        "text" : "People never get tired of taking pictures from this plaque downstairs",
+    }
+  }
+},
+  "grupo8" :{
+    "nome" : " moto",
+    "ID" : {
+  		"0" : {
+            "text" : "Supported by national intelligence, the federal police arrested today 300 motobikers ",
+        },
+        "1" : {
+            "text" : "Ghost Rider is the name of many antihero and Superheroes appearing in American comic books published by Marvel Comics",
+      },
+      "2" : {
+            "text" : "Motorcycle without license prevented from circulate",
+        },
+        "3" : {
+            "text" : "Attention:  this motorcycle is not in compliance with the appropriate carbon emission levels defined by the Greenzone license",
+      },
+      "4" : {
+          "text" : "Motorcycle identified as stolen",
+      }
+    }
+},
+   "grupo9" :{
+    "nome" : "onibus",
+    "ID" : {
+  		"0" : {
+            "text" : "M49 Heerstr./Nennhauser Damm – Hertzalle",
+        },
+        "1" : {
+            "text" : "Bus: the favourite target of black blocs, by the easy in cause explosions",
+      },
+      "2" : {
+            "text" : "M48",
+        },
+        "3" : {
+            "text" : "Tram only exists in the former eastgerman part, it was DDR mobility",
+      },
+      "4" : {
+          "text" : "It the fare doesn’t lower, the city will stop",
+    }
+    }
+},
+"grupo10" :{
+  "nome" : "caminhao",
+  "ID" : {
+    "0" : {
+          "text" : "Attention: live cargo",
+      },
+      "1" : {
+          "text" : "Attention: dangerous cargo",
+    },
+    "2" : {
+          "text" : "Attention: live cargo",
+      },
+      "3" : {
+          "text" : "Attention: dangerous cargo",
+    },
+      "4" : {
+          "text" : "Germany might fail in reaching emission-reduction 2020 goal",
+    }
+  }
+},
+ "grupo11" :{
+   "nome" : "tempo",
+   "ID" : {
+     "0" : {
+           "text" : " Summer in Berlin: the long summer days by the lakes, and in the parks and gardens of the city",
+       },
+       "1" : {
+           "text" : "Out there blows a warm summer wind",
+     },
+     "2" : {
+           "text" : "The night falls in Berlin with an intense temporal",
+       },
+       "3" : {
+           "text" : "The night falls gently, while I seek your eyes in the crowd",
+     },
+     "4" : {
+         "text" : "27oC now in Schöneberger Ufer. Sun and increase of clouds in the afternoon. Rainfalls in the evening",
+   }
+   }
+ },
+"grupo12" :{
+   "nome" : "3+ pessoas entrando/saindo" ,
+   "ID" : {
+     "0" : {
+           "text" : "Thieves are running away by front door in this minute",
+       },
+       "1" : {
+           "text" : "Suspects leave the building",
+     },
+     "2" : {
+           "text" : "Roofless movement invasion",
+       },
+       "3" : {
+           "text" : "Radical demonstrators invade the building protesting against rent raises",
+     },
+     "4" : {
+         "text" : "Learn who are the Schöneberg visitors and their favourite promenades",
+   }
+   }
+ }
+}

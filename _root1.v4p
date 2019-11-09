@@ -1,0 +1,1071 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
+   <PATCH nodename="C:\Marilia_Furman-PSM_Gallery\_root1.v4p" scrollx="2148" scrolly="1800" systemname="_root1" filename="C:\Users\Fernando Visockis\Desktop\_root1.v4p">
+   <BOUNDS type="Window" left="-360" top="840" width="14784" height="13164">
+   </BOUNDS>
+   <NODE systemname="JSON_Parser" filename="JSON_Parser.v4p" nodename="C:\Users\Fernando Visockis\Desktop\JSON_Parser.v4p" componentmode="Hidden" id="78">
+   <BOUNDS type="Node" left="7878" top="6356" width="2076" height="276">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4538" top="2416" width="6680" height="8312">
+   </BOUNDS>
+   <BOUNDS type="Window" left="4488" top="4680" width="15432" height="10896">
+   </BOUNDS>
+   <PIN pinname="Tracked Group" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Enable Random Fetch" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="JSON Input" visible="1" slicecount="1" values="|{&cr;&lf;  &quot;grupo1&quot; :{&cr;&lf;    &quot;nome&quot; : &quot;algo grande no rio&quot;,&cr;&lf;    &quot;ID&quot; : {&cr;&lf;&cr;&lf;        &quot;0&quot; : {&cr;&lf;            &quot;text&quot; : &quot;155 mil homens, 14.200 barcos, 600 navios&quot;,&cr;&lf;        },&cr;&lf;        &quot;1&quot; : {&cr;&lf;            &quot;text&quot; : &quot;No verão de 2003 observou-se que o Spree corria no sentido inverso do normal na zona de  Köpenik&quot;,&cr;&lf;      },&cr;&lf;        &quot;2&quot; : {&cr;&lf;        &tab;&quot;text&quot; : &quot;Barco é um artefato construído por um ser humano, capaz de flutuar e se deslocar sobre a água&quot; ,&cr;&lf;&cr;&lf;        },&cr;&lf;        &quot;3&quot; : {&cr;&lf;          &quot;text&quot; : &quot;Barco é um artefato construído por um ser humano, capaz de flutuar e se deslocar sobre a água&quot; ,&cr;&lf;&cr;&lf;        }&cr;&lf;    }&cr;&lf;},&cr;&lf;  &quot;grupo2&quot; :{&cr;&lf;    &quot;nome&quot; : &quot;algo pequeno no rio&quot;,&cr;&lf;    &quot;ID&quot; : {&cr;&lf;&cr;&lf;        &quot;0&quot; : {&cr;&lf;            &quot;text&quot; : &quot;Barco Higgins - LCVP (lancha de desembarque de veículos e pessoal)&quot;,&cr;&lf;        },&cr;&lf;        &quot;1&quot; : {&cr;&lf;            &quot;text&quot; : &quot;navegar é preciso, viver não é preciso- Fernando Pessoa&quot;,&cr;&lf;      },&cr;&lf;        &quot;2&quot; : {&cr;&lf;        &tab;&quot;text&quot; : &quot;encontre caiaque com as melhores ofertas e promoções&quot;,&cr;&lf;&cr;&lf;        },&cr;&lf;        &quot;3&quot; : {&cr;&lf;          &quot;text&quot; : &quot;encontre caiaque com as melhores ofertas e promoções&quot;,&cr;&lf;&cr;&lf;        }&cr;&lf;    }&cr;&lf;},&cr;&lf;  &quot;grupo3&quot; :{&cr;&lf;    &quot;nome&quot; : &quot;uma pessoa passando&quot;,&cr;&lf;    &quot;ID&quot; : {&cr;&lf;&cr;&lf;        &quot;0&quot; : {&cr;&lf;            &quot;text&quot; : &quot;suspeito: homem, negro, 22 anos&quot;,&cr;&lf;        },&cr;&lf;        &quot;1&quot; : {&cr;&lf;            &quot;text&quot; : &quot;suspeito: homem de turbante, 30 anos, 1,85m, carrega uma mochila preta&quot;,&cr;&lf;        },&cr;&lf;        &quot;2&quot; : {&cr;&lf;        &tab;&quot;text&quot; : &quot;hoje é um bom dia para caminhar&quot;,&cr;&lf;        },&cr;&lf;        &quot;3&quot; : {&cr;&lf;        &tab;&quot;text&quot; : &quot;bom dia&quot;,&cr;&lf;        }&cr;&lf;    }&cr;&lf;},&cr;&lf;  &quot;grupo4&quot; :{&cr;&lf;    &quot;nome&quot; : &quot;duas pessoas passando&quot;,&cr;&lf;    &quot;ID&quot; : {&cr;&lf;  &tab;&tab;&quot;0&quot; : {&cr;&lf;            &quot;text&quot; : &quot;modelo Isabel Teixera é vista com novo namorado&quot;,&cr;&lf;        },&cr;&lf;        &quot;1&quot; : {&cr;&lf;            &quot;text&quot; : &quot;nas ruas de berlin é possível sempre ver casais apaixonados caminhando&quot;,&cr;&lf;      },&cr;&lf;        &quot;2&quot; : {&cr;&lf;            &quot;text&quot; : &quot;suspeito é levado preso&quot;,&cr;&lf;      },&cr;&lf;        &quot;3&quot; : {&cr;&lf;            &quot;text&quot; : &quot;idosos necessitam acompanhantes&quot;,&cr;&lf;      }&cr;&lf;    }&cr;&lf;},&cr;&lf;  &quot;grupo5&quot; :{&cr;&lf;    &quot;nome&quot; : &quot;3+ pessoas&quot;,&cr;&lf;    &quot;ID&quot; : {&cr;&lf;  &tab;&tab;&quot;0&quot; : {&cr;&lf;            &quot;text&quot; : &quot;Uma passeata pela moralização da política acontece agora na Schonenberg ufer, na altura do numero 60&quot;,&cr;&lf;        },&cr;&lf;        &quot;1&quot; : {&cr;&lf;            &quot;text&quot; : &quot;Uma passeata pela facilitação da posse de armas acontece agora na altura do n60&quot;,&cr;&lf;      },&cr;&lf;        &quot;2&quot; : {&cr;&lf;            &quot;text&quot; : &quot;Pessoas caminham&quot;,&cr;&lf;      },&cr;&lf;      &quot;3&quot; : {&cr;&lf;          &quot;text&quot; : &quot;Pessoas caminham&quot;,&cr;&lf;    }&cr;&lf;    }&cr;&lf;},&cr;&lf;  &quot;grupo6&quot; :{&cr;&lf;    &quot;nome&quot; : &quot;pessoa entrando/saindo&quot;,&cr;&lf;    &quot;ID&quot; : {&cr;&lf;  &tab;&tab;&quot;0&quot; : {&cr;&lf;            &quot;text&quot; : &quot;e ela foi embora, sem nada dizer&quot;,&cr;&lf;        },&cr;&lf;        &quot;1&quot; : {&cr;&lf;            &quot;text&quot; : &quot;numa manhã de domingo, ela partiu&quot;,&cr;&lf;      },&cr;&lf;        &quot;2&quot; : {&cr;&lf;            &quot;text&quot; : &quot;suspeito foge&quot;,&cr;&lf;      },&cr;&lf;      &quot;3&quot; : {&cr;&lf;          &quot;text&quot; : &quot;suspeito foge&quot;,&cr;&lf;    }&cr;&lf;&cr;&lf;},&cr;&lf;  &quot;grupo7&quot; :{&cr;&lf;    &quot;nome&quot; : &quot;pessoas entrando/saindo&quot;,&cr;&lf;    &quot;ID&quot; : {&cr;&lf;  &tab;&tab;&quot;0&quot; : {&cr;&lf;            &quot;text&quot; : &quot;modelo acompanhada de moreno misterioso é vista adentrando galeria PSM&quot;,&cr;&lf;        },&cr;&lf;        &quot;1&quot; : {&cr;&lf;            &quot;text&quot; : &quot;dupla de radicais tenta invadir o prédio&quot;,&cr;&lf;      },&cr;&lf;        &quot;2&quot; : {&cr;&lf;            &quot;text&quot; : &quot;casal que estaria desaparecido é visto entrando em prédio em mitte&quot;,&cr;&lf;      },&cr;&lf;      &quot;3&quot; : {&cr;&lf;          &quot;text&quot; : &quot;casal que estaria desaparecido é visto entrando em prédio em mitte&quot;,&cr;&lf;    }&cr;&lf;    }&cr;&lf;},&cr;&lf;  &quot;grupo8&quot; :{&cr;&lf;    &quot;nome&quot; : &quot;1 moto&quot;,&cr;&lf;    &quot;ID&quot; : {&cr;&lf;  &tab;&tab;&quot;0&quot; : {&cr;&lf;            &quot;text&quot; : &quot;motoboy: vida loka&quot;,&cr;&lf;        },&cr;&lf;        &quot;1&quot; : {&cr;&lf;            &quot;text&quot; : &quot;harley Davidson&quot;,&cr;&lf;      },&cr;&lf;      &quot;2&quot; : {&cr;&lf;            &quot;text&quot; : &quot;motoboy: vida loka&quot;,&cr;&lf;        },&cr;&lf;        &quot;3&quot; : {&cr;&lf;            &quot;text&quot; : &quot;harley Davidson&quot;,&cr;&lf;      }&cr;&lf;    }&cr;&lf;},&cr;&lf;  &quot;grupo9&quot; :{&cr;&lf;    &quot;nome&quot; : &quot;2+ motos&quot;,&cr;&lf;    &quot;ID&quot; : {&cr;&lf;  &tab;&tab;&quot;0&quot; : {&cr;&lf;            &quot;text&quot; : &quot;hells angels passam&quot;,&cr;&lf;        },&cr;&lf;        &quot;1&quot; : {&cr;&lf;            &quot;text&quot; : &quot;harley Davidson festival&quot;,&cr;&lf;      },&cr;&lf;      &quot;2&quot; : {&cr;&lf;            &quot;text&quot; : &quot;hells angels passam&quot;,&cr;&lf;        },&cr;&lf;        &quot;3&quot; : {&cr;&lf;            &quot;text&quot; : &quot;harley Davidson festival&quot;,&cr;&lf;      }&cr;&lf;    }&cr;&lf;},&cr;&lf;  &quot;grupo10&quot; :{&cr;&lf;    &quot;nome&quot; : &quot;onibus&quot;,&cr;&lf;    &quot;ID&quot; : {&cr;&lf;  &tab;&tab;&quot;0&quot; : {&cr;&lf;            &quot;text&quot; : &quot;M49 Heerstr./Nennhauser Damm – Hertzalle&quot;,&cr;&lf;        },&cr;&lf;        &quot;1&quot; : {&cr;&lf;            &quot;text&quot; : &quot;M48&quot;,&cr;&lf;      },&cr;&lf;      &quot;2&quot; : {&cr;&lf;            &quot;text&quot; : &quot;M49 Heerstr./Nennhauser Damm – Hertzalle&quot;,&cr;&lf;        },&cr;&lf;        &quot;3&quot; : {&cr;&lf;            &quot;text&quot; : &quot;M48&quot;,&cr;&lf;      }&cr;&lf;    }&cr;&lf;}&cr;&lf;&cr;&lf;}&cr;&lf;|">
+   </PIN>
+   <PIN pinname="Legenda" visible="1">
+   </PIN>
+   <PIN pinname="Duracao" visible="1">
+   </PIN>
+   <PIN pinname="Read - Set" visible="1">
+   </PIN>
+   <PIN pinname="Posed query" visible="1">
+   </PIN>
+   <PIN pinname="Detected class" visible="1" slicecount="1" values="motorcycle">
+   </PIN>
+   <PIN pinname="Amount of objects" visible="1" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Chosen detected class" visible="1">
+   </PIN>
+   <PIN pinname="Tracked srt group" visible="1">
+   </PIN>
+   <PIN pinname="Read-Set" visible="1">
+   </PIN>
+   <PIN pinname="Legendas sobre o tempo" visible="1">
+   </PIN>
+   <PIN pinname="Rects enabled" visible="1">
+   </PIN>
+   <PIN pinname="centerXY" visible="1" slicecount="2" values="351.536315917969,561.647094726562">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="82">
+   <BOUNDS type="Node" left="10216" top="6248" width="2552" height="216">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10216" top="6248" width="1536" height="456">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|here we parse the data from JSON file|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <PACK Name="dx11.particles" Version="1.0.2">
+   </PACK>
+   <PACK Name="VVVV.Packs.Image" Version="0.2.0">
+   </PACK>
+   <PACK Name="addonpack" Version="38.1.0">
+   </PACK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="154">
+   <BOUNDS type="Box" left="15182" top="3288" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="15182" top="3288" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="VideoIn (DX11 DShow)" filename="%VVVV%\packs\dx11\nodes\plugins\dshow\VVVV.DX11.Nodes.DShow.dll" nodename="VideoIn (DX11 DShow)" componentmode="Hidden" id="156">
+   <BOUNDS type="Node" left="14040" top="1856" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="14040" top="1856" width="1600" height="1600">
+   </BOUNDS>
+   <PIN pinname="Video Format" slicecount="1" values="MJPG">
+   </PIN>
+   <PIN pinname="Resolution" slicecount="1" visible="1" values="1280x720">
+   </PIN>
+   <PIN pinname="Framerate" slicecount="1" values="30">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Enable" visible="1">
+   </PIN>
+   <PIN pinname="Device" slicecount="1" visible="1" values="|Logitech HD Webcam C615|">
+   </PIN>
+   <PIN pinname="Width" visible="1">
+   </PIN>
+   <PIN pinname="Height" visible="1">
+   </PIN>
+   <PIN pinname="Properties" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="155">
+   <BOUNDS type="Box" left="15392" top="1496" width="420" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="15392" top="1496" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enable">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="155" srcpinname="Y Output Value" dstnodeid="156" dstpinname="Enable">
+   </LINK>
+   <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="157">
+   <BOUNDS type="Node" left="7288" top="13920" width="2172" height="276">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7288" top="13920" width="1600" height="1600">
+   </BOUNDS>
+   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 4" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 5" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="163">
+   <BOUNDS type="Box" left="15600" top="2188" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="15600" top="2188" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enable">
+   </PIN>
+   </NODE>
+   <NODE systemname="YoloView (Yolo)" filename="Patches\YoloDetector-Video.vl" nodename="YoloView (Yolo)" componentmode="Hidden" id="153">
+   <BOUNDS type="Node" left="14032" top="2815" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Font Size" visible="1" slicecount="1" values="0.3">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="CenterXY" visible="1">
+   </PIN>
+   <PIN pinname="SizeXY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="154" srcpinname="Y Output Value" dstnodeid="153" dstpinname="Enabled">
+   </LINK>
+   <NODE systemname="Timing (Debug)" nodename="Timing (Debug)" componentmode="Hidden" id="166">
+   <BOUNDS type="Node" left="4932" top="452" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="frames per second" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="167">
+   <BOUNDS type="Box" left="4940" top="1012" width="696" height="208">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4940" top="1012" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|frames per second|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="166" srcpinname="frames per second" dstnodeid="167" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="168">
+   <BOUNDS type="Node" left="16484" top="2356" width="1352" height="216">
+   </BOUNDS>
+   <BOUNDS type="Box" left="16484" top="2356" width="912" height="672">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|openCV YOLO Stuff|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="198">
+   <BOUNDS type="Box" left="16348" top="3028" width="1716" height="1944">
+   </BOUNDS>
+   <BOUNDS type="Node" left="16348" top="3028" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Classes detected|">
+   </PIN>
+   </NODE>
+   <NODE id="151" componentmode="Hidden" systemname="Yolo_Detection" filename="Patches\Yolo_Detection\Yolo_Detection.v4p" nodename="Patches\Yolo_Detection\Yolo_Detection.v4p">
+   <PIN pinname="Class Label" visible="1">
+   </PIN>
+   <PIN pinname="On Data" visible="1">
+   </PIN>
+   <BOUNDS type="Node" left="14038" top="2380" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9628" top="0" width="8820" height="13470">
+   </BOUNDS>
+   <BOUNDS type="Window" left="4704" top="4336" width="8816" height="13464">
+   </BOUNDS>
+   <PIN pinname="Image Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Preview" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Reset Detection" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Enable" visible="1">
+   </PIN>
+   <PIN pinname="Person Detected" visible="1">
+   </PIN>
+   <PIN pinname="Probability Threshold" slicecount="1" values="0.53">
+   </PIN>
+   <PIN pinname="Confidence" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="163" srcpinname="Y Output Value" dstnodeid="151" dstpinname="Enable" linkstyle="VHV">
+   <LINKPOINT x="15648" y="2608">
+   </LINKPOINT>
+   <LINKPOINT x="14456" y="2428">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="151" srcpinname="Preview" dstnodeid="153" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="270">
+   <BOUNDS type="Box" left="10780" top="4856" width="348" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10780" top="4856" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Amount of objects|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="271">
+   <BOUNDS type="Box" left="8384" top="5428" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8384" top="5428" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Read+bang it|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="271" srcpinname="Y Output Value" dstnodeid="78" dstpinname="Read - Set">
+   </LINK>
+   <LINK srcnodeid="271" srcpinname="Y Output Value" dstnodeid="78" dstpinname="Enable Random Fetch">
+   </LINK>
+   <NODE systemname="MonoFlop (Animation)" nodename="MonoFlop (Animation)" componentmode="Hidden" id="276">
+   <BOUNDS type="Node" left="9052" top="9664" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Time" slicecount="1" visible="1" values="3">
+   </PIN>
+   <PIN pinname="Set" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Retriggerable" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="278">
+   <BOUNDS type="Node" left="9960" top="1964" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Period" slicecount="1" visible="1" values="6">
+   </PIN>
+   <PIN pinname="Change" visible="1">
+   </PIN>
+   <PIN pinname="Pause" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="279">
+   <BOUNDS type="Box" left="10172" top="1108" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10172" top="1108" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Pause">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="279" srcpinname="Y Output Value" dstnodeid="278" dstpinname="Pause" hiddenwhenlocked="1">
+   </LINK>
+   <NODE id="282" systemname="text_formatter" filename="text_formatter.v4p" nodename="text_formatter.v4p" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="7892" top="10473" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3724" top="6353" width="8336" height="8240">
+   </BOUNDS>
+   <BOUNDS type="Window" left="13344" top="1668" width="8328" height="8232">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Patch" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Legenda" visible="1" slicecount="1" values="|Carros doidos|">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Alpha" visible="1" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="283">
+   <BOUNDS type="Node" left="9360" top="10448" width="2552" height="216">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9360" top="10448" width="2552" height="216">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|here we format the text|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="284">
+   <BOUNDS type="Node" left="11076" top="1836" width="1864" height="216">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11076" top="1836" width="1728" height="648">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|main filter creates a snapshot of the scene&cr;&lf;every 6 seconds|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="320">
+   <BOUNDS type="Box" left="7872" top="6864" width="2000" height="232">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7872" top="6864" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Legenda">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="78" srcpinname="Legenda" dstnodeid="320" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="321">
+   <BOUNDS type="Box" left="8388" top="7744" width="1788" height="252">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8388" top="7744" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Posed query|">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="78" srcpinname="Posed query" dstnodeid="321" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="data_fetcher" filename="data_fetcher.v4p" nodename="data_fetcher.v4p" componentmode="Hidden" id="328">
+   <BOUNDS type="Node" left="10297" top="3258" width="2328" height="276">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4789" top="1048" width="11016" height="10696">
+   </BOUNDS>
+   <BOUNDS type="Window" left="8664" top="1956" width="18300" height="10692">
+   </BOUNDS>
+   <PIN pinname="All detected classes" visible="1">
+   </PIN>
+   <PIN pinname="Amount of objects" visible="1">
+   </PIN>
+   <PIN pinname="All detected classes by YOLO" visible="1" slicecount="1" values="person">
+   </PIN>
+   <PIN pinname="Random order" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Chosen class" visible="1">
+   </PIN>
+   <PIN pinname="Search Enabled" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Randomize order" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Bang Legenda" visible="1">
+   </PIN>
+   <PIN pinname="Rect_Position" visible="1">
+   </PIN>
+   <PIN pinname="Chosen Object Rect_Pos" visible="1">
+   </PIN>
+   <PIN pinname="Chosen Obect Rect_size" visible="1">
+   </PIN>
+   <PIN pinname="Rect_Size" visible="1">
+   </PIN>
+   <PIN pinname="Chose label" visible="1">
+   </PIN>
+   <PIN pinname="Confidence" visible="1">
+   </PIN>
+   <PIN pinname="Chosen object confidence" visible="1">
+   </PIN>
+   <PIN pinname="Chosen object label" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="329">
+   <BOUNDS type="Node" left="9704" top="9448" width="1680" height="216">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9704" top="9448" width="2184" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|here we display it for 3s|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="S+H (Animation)" filename="" nodename="S+H (Animation)" componentmode="Hidden" id="333">
+   <BOUNDS type="Node" left="10788" top="4472" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="328" srcpinname="Amount of objects" dstnodeid="333" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="333" srcpinname="Output" dstnodeid="270" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="334">
+   <BOUNDS type="Box" left="9956" top="472" width="696" height="208">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9956" top="472" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="s">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Period">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="334" srcpinname="Y Output Value" dstnodeid="278" dstpinname="Period">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="335">
+   <BOUNDS type="Box" left="9572" top="9132" width="696" height="208">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9572" top="9132" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="6">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="s">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Time">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="335" srcpinname="Y Output Value" dstnodeid="276" dstpinname="Time">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="338">
+   <BOUNDS type="Box" left="14016" top="960" width="1596" height="276">
+   </BOUNDS>
+   <BOUNDS type="Node" left="14016" top="960" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="|Logitech HD Webcam C615|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|Chicony USB 2.0 Camera|">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="338" srcpinname="Output Enum" dstnodeid="156" dstpinname="Device">
+   </LINK>
+   <NODE systemname="S+H (String)" nodename="S+H (String)" componentmode="Hidden" id="339">
+   <BOUNDS type="Node" left="10848" top="2904" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Set" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="car">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="339" srcpinname="Output" dstnodeid="328" dstpinname="All detected classes by YOLO">
+   </LINK>
+   <NODE systemname="MainLoop (VVVV)" nodename="MainLoop (VVVV)" componentmode="Hidden" id="-6">
+   <BOUNDS type="Node" left="7056" top="468" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Maximum Background FPS" slicecount="1" values="120">
+   </PIN>
+   <PIN pinname="Maximum Foreground FPS" slicecount="1" values="120">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="340">
+   <BOUNDS type="Box" left="10776" top="15600" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10776" top="15600" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Fullscreen">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="341">
+   <BOUNDS type="Box" left="9444" top="5184" width="1176" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9444" top="5184" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Chosen detected class|">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="328" srcpinname="Chosen class" dstnodeid="341" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="341" srcpinname="Output String" dstnodeid="78" dstpinname="Chosen detected class">
+   </LINK>
+   <LINK srcnodeid="270" srcpinname="Y Output Value" dstnodeid="78" dstpinname="Amount of objects">
+   </LINK>
+   <LINK srcnodeid="271" srcpinname="Y Output Value" dstnodeid="78" dstpinname="Read-Set">
+   </LINK>
+   <NODE systemname="Reader (String)" filename="%VVVV%\lib\nodes\modules\String\Reader (String).v4p" nodename="Reader (String)" componentmode="Hidden" id="348">
+   <BOUNDS type="Node" left="6408" top="6132" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" slicecount="1" visible="1" values="file.txt">
+   </PIN>
+   <PIN pinname="Read" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Content" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="348" srcpinname="Content" dstnodeid="78" dstpinname="JSON Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="350">
+   <BOUNDS type="Box" left="6384" top="4680" width="1908" height="288">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6384" top="4680" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Legendas\legendas2.json">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="file.txt">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Text Formats (*.csv, *.dtd, *.html, *.txt, *.xml)||*.csv;*.dtd;*.html;*.htm;*.txt;*.xml||Text (*.txt)||*.txt||XML (*.xml)||*.xml||CSV (*.csv)||*.csv||DTD (*.dtd)||*.dtd||HTML (*.html, *.htm)||*.html;*.htm|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="351">
+   <BOUNDS type="Node" left="4848" top="1668" width="2676" height="240">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4848" top="1668" width="2424" height="1668">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Marilia Furman - PSM Gallery June 2019|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="16">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Comic Sans MS|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="156" srcpinname="Texture Out" dstnodeid="151" dstpinname="Image Input">
+   </LINK>
+   <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="368">
+   <BOUNDS type="Node" left="9012" top="17172" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Aspect Width" visible="1">
+   </PIN>
+   <PIN pinname="Aspect Height" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Alignment" slicecount="1" values="FitOut">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="369">
+   <BOUNDS type="Node" left="9036" top="16740" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XY" visible="1" slicecount="2" values="1280,719">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="369" srcpinname="X" dstnodeid="368" dstpinname="Aspect Width">
+   </LINK>
+   <LINK srcnodeid="369" srcpinname="Y" dstnodeid="368" dstpinname="Aspect Height">
+   </LINK>
+   <NODE systemname="FullscreenQuad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\modules\FullscreenQuad (DX11.Layer).v4p" nodename="FullscreenQuad (DX11.Layer)" componentmode="Hidden" id="158">
+   <BOUNDS type="Node" left="7488" top="12540" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Color" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Texture Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="158" srcpinname="Layer" dstnodeid="157" dstpinname="Layer 1">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="383">
+   <BOUNDS type="Box" left="9648" top="14196" width="792" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9648" top="14196" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="1920,1080">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="384">
+   <BOUNDS type="Box" left="14400" top="540" width="1596" height="276">
+   </BOUNDS>
+   <BOUNDS type="Node" left="14400" top="540" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="1920x1080">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="1920x1080">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="384" srcpinname="Output Enum" dstnodeid="156" dstpinname="Resolution">
+   </LINK>
+   <NODE systemname="FullscreenQuad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\modules\FullscreenQuad (DX11.Layer).v4p" nodename="FullscreenQuad (DX11.Layer)" componentmode="Hidden" id="389">
+   <BOUNDS type="Node" left="8064" top="15864" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Renderer (DX11 TempTarget)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11 TempTarget)" componentmode="Hidden" id="410">
+   <BOUNDS type="Node" left="7128" top="15240" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7128" top="15240" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Texture SizeXY" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Buffers" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="383" srcpinname="Y Output Value" dstnodeid="410" dstpinname="Texture SizeXY">
+   </LINK>
+   <LINK srcnodeid="157" srcpinname="Layer Out" dstnodeid="410" dstpinname="Layer">
+   </LINK>
+   <LINK srcnodeid="410" srcpinname="Buffers" dstnodeid="389" dstpinname="Texture">
+   </LINK>
+   <NODE systemname="claess_labeling" filename="claess_labeling.v4p" nodename="claess_labeling.v4p" componentmode="Hidden" id="414">
+   <BOUNDS type="Node" left="8730" top="11610" width="2016" height="276">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4696" top="7948" width="8068" height="7324">
+   </BOUNDS>
+   <BOUNDS type="Window" left="8364" top="3924" width="14676" height="7320">
+   </BOUNDS>
+   <PIN pinname="Label_Layer" visible="1">
+   </PIN>
+   <PIN pinname="Detected_Class" visible="1">
+   </PIN>
+   <PIN pinname="Layer-Rect" visible="1">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   <PIN pinname="Confidence_Layer" visible="1">
+   </PIN>
+   <PIN pinname="Confidence" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SizeXY" visible="1" slicecount="4" values="225,92,241,90">
+   </PIN>
+   <PIN pinname="CenterXY" visible="1" slicecount="2" values="0,0">
+   </PIN>
+   <PIN pinname="Alpha" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Legendas sobre o tempo" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="383" srcpinname="Y Output Value" dstnodeid="414" dstpinname="Input 2 1">
+   </LINK>
+   <LINK srcnodeid="282" srcpinname="Layer" dstnodeid="157" dstpinname="Layer 2">
+   </LINK>
+   <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="415">
+   <BOUNDS type="Node" left="9048" top="4188" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9048" top="4188" width="1600" height="1600">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="350" srcpinname="Output String" dstnodeid="348" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="383" srcpinname="Y Output Value" dstnodeid="414" dstpinname="XY">
+   </LINK>
+   <LINK srcnodeid="414" srcpinname="Confidence_Layer" dstnodeid="157" dstpinname="Layer 4">
+   </LINK>
+   <LINK srcnodeid="414" srcpinname="Label_Layer" dstnodeid="157" dstpinname="Layer 5">
+   </LINK>
+   <LINK srcnodeid="198" srcpinname="Output String" dstnodeid="339" dstpinname="Input">
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="423">
+   <BOUNDS type="Node" left="10320" top="2400" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="278" srcpinname="Change" dstnodeid="423" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="423" srcpinname="Up Edge" dstnodeid="339" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="423" srcpinname="Up Edge" dstnodeid="328" dstpinname="Reset priority counter">
+   </LINK>
+   <LINK srcnodeid="328" srcpinname="Bang Legenda" dstnodeid="333" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="328" srcpinname="Bang Legenda" dstnodeid="415" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="426">
+   <BOUNDS type="Node" left="7188" top="3900" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Bang" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Blend (DX11.RenderState)" filename="%VVVV%\directx11\plugins\VVVV.DX11.Nodes.dll" nodename="Blend (DX11.RenderState)" componentmode="Hidden" id="427">
+   <BOUNDS type="Node" left="528" top="9069" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Mode" slicecount="1" values="Blend">
+   </PIN>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="153" srcpinname="CenterXY" dstnodeid="328" dstpinname="Rect_Position">
+   </LINK>
+   <LINK srcnodeid="153" srcpinname="SizeXY" dstnodeid="328" dstpinname="Rect_Size">
+   </LINK>
+   <NODE systemname="HSCB (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Filter\HSCB.tfx" nodename="HSCB (DX11.TextureFX)" componentmode="Hidden" id="431">
+   <BOUNDS type="Node" left="5580" top="10512" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Contrast" visible="1" slicecount="1" values="-0.67">
+   </PIN>
+   <PIN pinname="Saturation" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Brightness" visible="1" slicecount="1" values="0.25">
+   </PIN>
+   <PIN pinname="Hue" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="156" srcpinname="Texture Out" dstnodeid="431" dstpinname="Texture In" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="276" srcpinname="Output" dstnodeid="282" dstpinname="Alpha">
+   </LINK>
+   <LINK srcnodeid="328" srcpinname="Chosen object label" dstnodeid="414" dstpinname="Detected_Class" hiddenwhenlocked="0">
+   </LINK>
+   <LINK srcnodeid="151" srcpinname="Confidence" dstnodeid="328" dstpinname="Confidence">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="436">
+   <BOUNDS type="Node" left="8712" top="9276" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="415" srcpinname="Output 1" dstnodeid="436" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="78" srcpinname="Legendas sobre o tempo" dstnodeid="436" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="414" srcpinname="Layer Out" dstnodeid="157" dstpinname="Layer 3">
+   </LINK>
+   <LINK srcnodeid="328" srcpinname="Chosen object confidence" dstnodeid="414" dstpinname="Confidence" hiddenwhenlocked="0">
+   </LINK>
+   <NODE systemname="Delay (Animation)" nodename="Delay (Animation)" componentmode="Hidden" id="437">
+   <BOUNDS type="Node" left="11676" top="15000" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Time" slicecount="1" values="5">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="426" srcpinname="Bang" dstnodeid="437" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="FlipFlop (Animation)" nodename="FlipFlop (Animation)" componentmode="Hidden" id="438">
+   <BOUNDS type="Node" left="11664" top="15396" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Set" slicecount="1" visible="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="437" srcpinname="Output" dstnodeid="438" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="328" srcpinname="Chosen Object Rect_Pos" dstnodeid="78" dstpinname="centerXY">
+   </LINK>
+   <LINK srcnodeid="431" srcpinname="Texture Out" dstnodeid="158" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="151" srcpinname="Class Label" dstnodeid="198" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="328" srcpinname="Chosen Object Rect_Pos" dstnodeid="414" dstpinname="CenterXY">
+   </LINK>
+   <LINK srcnodeid="328" srcpinname="Chosen Obect Rect_size" dstnodeid="414" dstpinname="SizeXY">
+   </LINK>
+   <LINK srcnodeid="438" srcpinname="Output" dstnodeid="340" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="415" srcpinname="Output 1" dstnodeid="271" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="443">
+   <BOUNDS type="Node" left="12024" top="9876" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Legenda active|">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="|Legenda active|">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="276" srcpinname="Output" dstnodeid="443" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="Switch (String Output)" nodename="Switch (String Output)" componentmode="Hidden" id="445">
+   <BOUNDS type="Node" left="6492" top="7752" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="320" srcpinname="Output String" dstnodeid="445" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="446">
+   <BOUNDS type="Box" left="6456" top="8628" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6456" top="8628" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="445" srcpinname="Output 1" dstnodeid="446" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="446" srcpinname="Output String" dstnodeid="282" dstpinname="Legenda">
+   </LINK>
+   <LINK srcnodeid="436" srcpinname="Output" dstnodeid="276" dstpinname="Set">
+   </LINK>
+   <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="447">
+   <BOUNDS type="Node" left="5880" top="6936" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5880" top="6936" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <PIN pinname="Initialize" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="276" srcpinname="Output" dstnodeid="447" dstpinname="Input 1">
+   <LINKPOINT x="5628" y="9600">
+   </LINKPOINT>
+   <LINKPOINT x="5244" y="8388">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="447" srcpinname="Output 1" dstnodeid="445" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="276" srcpinname="Output" dstnodeid="414" dstpinname="Alpha">
+   </LINK>
+   <LINK srcnodeid="78" srcpinname="Rects enabled" dstnodeid="414" dstpinname="Enabled">
+   </LINK>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="448">
+   <BOUNDS type="Node" left="7368" top="16416" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7368" top="16416" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="17520" top="6396" width="5016" height="4164">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Actual BackBuffer SizeXY" visible="1">
+   </PIN>
+   <PIN pinname="Aspect Ratio" visible="1">
+   </PIN>
+   <PIN pinname="Fullscreen" visible="1" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="389" srcpinname="Layer" dstnodeid="448" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="448" srcpinname="Actual BackBuffer SizeXY" dstnodeid="369" dstpinname="XY">
+   </LINK>
+   <LINK srcnodeid="368" srcpinname="Transform Out" dstnodeid="448" dstpinname="Aspect Ratio">
+   <LINKPOINT x="9362" y="18166">
+   </LINKPOINT>
+   <LINKPOINT x="10384" y="18104">
+   </LINKPOINT>
+   <LINKPOINT x="10614" y="17190">
+   </LINKPOINT>
+   <LINKPOINT x="9848" y="16144">
+   </LINKPOINT>
+   <LINKPOINT x="9442" y="16166">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="78" srcpinname="Legendas sobre o tempo" dstnodeid="414" dstpinname="Legendas sobre o tempo">
+   </LINK>
+   <LINK srcnodeid="426" srcpinname="Bang" dstnodeid="348" dstpinname="Read">
+   </LINK>
+   <LINK srcnodeid="340" srcpinname="Y Output Value" dstnodeid="448" dstpinname="Fullscreen">
+   </LINK>
+   </PATCH>
